@@ -1,0 +1,11 @@
+body{
+background-color: #000;
+color: #fff;
+font-family: arial;
+}
+
+.content{
+	width: 100%;
+	max-width: 600px;
+	border: 1px solid lightsalmon;
+}
