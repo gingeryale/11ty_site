@@ -376,7 +376,6 @@ html {
 
 body {
   font-family: "volt", sans-serif;
-  background-color: #fff;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -387,10 +386,20 @@ body {
 }
 
 button {
-  width: 8.8rem;
+  width: 10rem;
   height: 4rem;
-  background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
+  border: 2px solid #6e12c8;
+  background-color: #fff;
   border-radius: 5px;
+  color: #6e12c8;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  line-height: 2.4;
+  margin-top: 2.5rem;
+}
+
+button:hover {
+  background-color: #6e12c8;
   color: #fff;
 }
 
@@ -400,7 +409,7 @@ button {
 }
 
 .header-hero {
-  height: 42rem;
+  height: 48rem;
 }
 
 .header-art {
@@ -811,6 +820,19 @@ footer {
   background-color: #fff;
   color: #000;
   font-size: 1.4rem;
+  height: 6rem;
+  background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
+  display: block;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer span {
+  color: #fff;
+}
+
+footer span a {
+  color: inherit;
 }
 
 .wrapper.home .content .listing {
@@ -822,11 +844,28 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 2.5rem;
-  border: 1px solid rgba(110, 18, 200, 0.1);
 }
 
 .wrapper.home .content .listing:first-of-type {
   margin-top: 2.5rem;
+}
+
+.wrapper.home .content .listing:last-of-type {
+  margin-bottom: 20rem;
+}
+
+.wrapper.home .content .listing.fade-in {
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.wrapper.home .content .listing.fade-in.appear {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .wrapper.home .content .listing-art {
@@ -840,6 +879,32 @@ footer {
       -ms-flex-pack: left;
           justify-content: left;
   padding-left: 5px;
+}
+
+@-webkit-keyframes fadeEffect {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .project {

@@ -34,7 +34,6 @@ html {
 
 body {
     font-family: "volt", sans-serif;
-    background-color: $pageBackground;
     color: rgba($black, 0.8);
 }
 
@@ -45,9 +44,17 @@ body {
 }
 
 button {
-    width: 8.8rem;
+    width: 10rem;
     height: 4rem;
-    @include gradient(45deg, $list1);
+    border: 2px solid $purple2;
+    background-color: $white;
     border-radius: 5px;
-    color: $white;
+    color: $purple2;
+    transition: all 0.2s ease-in;
+    line-height: 2.4;
+    margin-top: $margin2;
+    &:hover {
+        background-color: $purple2;
+        color: $white;
+    }
 }

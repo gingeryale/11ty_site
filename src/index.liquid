@@ -2,14 +2,53 @@
 layout: "layout/home.njk"
 title: "home"
 description: "index page"
-listingA: "assets/img/listingA450x215.png"
+listingA: "assets/img/listingA450x215.jpg"
 ---
 
 
 
 
 {% block home %}
-    <div class="listing">
+    <article class="listing fade-in">
+        <div class="listing-art">
+        <figure>
+            <img src="{{ listingA }}" alt="project listing"/>
+                <figcaption>Brief Caption</figcaption>
+            </figure>
+        </div>
+        <div class="listing-text">
+            <h3>How the Coronavirus is Killing the Middle Class</h3>
+            <p>As the economic shutdown prompted by the pandemic stretches on, many who were already struggling to make ends meet have begun to feel the strains of debts without the assurance of income.</p>
+            <button>See more</button>
+        </div>
+    </article>
+    <article class="listing fade-in">
+        <div class="listing-art">
+        <figure>
+            <img src="{{ listingA }}" alt="project listing"/>
+                <figcaption>Brief Caption</figcaption>
+            </figure>
+        </div>
+        <div class="listing-text">
+            <h3>How the Coronavirus is Killing the Middle Class listing</h3>
+            <p>As the economic shutdown prompted by the pandemic stretches on, many who were already struggling to make ends meet have begun to feel the strains of debts without the assurance of income.</p>
+            <button>See More</button>
+        </div>
+    </article>
+    <article class="listing fade-in">
+        <div class="listing-art">
+        <figure>
+            <img src="{{ listingA }}" alt="project listing"/>
+                <figcaption>Brief Caption</figcaption>
+            </figure>
+        </div>
+        <div class="listing-text">
+            <h3>How the Coronavirus is Killing the Middle Class title for project listing</h3>
+            <p>As the economic shutdown prompted by the pandemic stretches on, many who were already struggling to make ends meet have begun to feel the strains of debts without the assurance of income.</p>
+            <button>See More</button>
+        </div>
+    </article>
+    <article class="listing fade-in">
         <div class="listing-art">
         <figure>
             <img src="{{ listingA }}" alt="project listing"/>
@@ -18,11 +57,11 @@ listingA: "assets/img/listingA450x215.png"
         </div>
         <div class="listing-text">
             <h3>Expanded title for project listing</h3>
-            <p>One or two sentences on what people are looking at...</p>
-            <button>See more</button>
+            <p>As the economic shutdown prompted by the pandemic stretches on, many who were already struggling to make ends meet have begun to feel the strains of debts without the assurance of income.</p>
+            <button>See More</button>
         </div>
-    </div>
-    <div class="listing">
+    </article>
+     <article class="listing fade-in">
         <div class="listing-art">
         <figure>
             <img src="{{ listingA }}" alt="project listing"/>
@@ -31,35 +70,9 @@ listingA: "assets/img/listingA450x215.png"
         </div>
         <div class="listing-text">
             <h3>Expanded title for project listing</h3>
-            <p>One or two sentences on what people are looking at...</p>
-            <button>See more</button>
+            <p>As the economic shutdown prompted by the pandemic stretches on, many who were already struggling to make ends meet have begun to feel the strains of debts without the assurance of income.</p>
+            <button>See More</button>
         </div>
-    </div>
-    <div class="listing">
-        <div class="listing-art">
-        <figure>
-            <img src="{{ listingA }}" alt="project listing"/>
-                <figcaption>Brief Caption</figcaption>
-            </figure>
-        </div>
-        <div class="listing-text">
-            <h3>Expanded title for project listing</h3>
-            <p>One or two sentences on what people are looking at...</p>
-            <button>See more</button>
-        </div>
-    </div>
-    <div class="listing">
-        <div class="listing-art">
-        <figure>
-            <img src="{{ listingA }}" alt="project listing"/>
-                <figcaption>Brief Caption</figcaption>
-            </figure>
-        </div>
-        <div class="listing-text">
-            <h3>Expanded title for project listing</h3>
-            <p>One or two sentences on what people are looking at...</p>
-            <button>See more</button>
-        </div>
-    </div>
+    </article>
     
 {% endblock home %}
