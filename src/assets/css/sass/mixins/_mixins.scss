@@ -12,3 +12,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* GRADIENT LISTS
+============================================= */
+
+$list1: $purple1, $purple2, $purple3;
+
+$list2: $purple1 0%, $purple2 34%, $purple3 100%;
+
+@mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+}

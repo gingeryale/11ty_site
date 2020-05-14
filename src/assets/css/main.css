@@ -343,6 +343,8 @@ template {
   display: none;
 }
 
+/* GRADIENT LISTS
+============================================= */
 @font-face {
   font-family: "volt";
   src: url("fonts/Voltaire-Regular.otf") format("otf");
@@ -374,12 +376,27 @@ html {
 
 body {
   font-family: "volt", sans-serif;
-  background-color: #1900ff;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.content {
+  width: 100%;
+  max-width: 86%;
+  margin: 0 auto;
+}
+
+button {
+  width: 8.8rem;
+  height: 4rem;
+  background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
+  border-radius: 5px;
   color: #fff;
 }
 
-.link {
-  display: block;
+.header {
+  background: #410585;
+  background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
 }
 
 .header-hero {
@@ -403,25 +420,35 @@ body {
 
 .header-art figure {
   height: 100%;
-  padding: 2rem 7rem 0;
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-art a.header-link .header-svg {
-  width: 88%;
+  width: 188%;
   stroke-linecap: square;
 }
 
 .header-icons {
   width: 50%;
   opacity: 0.68;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header-icons .header-icon {
   -webkit-filter: invert(1);
           filter: invert(1);
   position: absolute;
-  height: 5rem;
+  height: 4rem;
 }
 
 .header-icons .header-icon.ai {
@@ -447,7 +474,7 @@ body {
 .header-icons .header-icon.html {
   top: 24rem;
   left: 60rem;
-  height: 8rem;
+  height: 7rem;
 }
 
 .header-icons .header-icon.js {
@@ -512,7 +539,7 @@ body {
 }
 
 .header-icons .header-icon.big {
-  height: 6rem;
+  height: 5rem;
 }
 
 .header ul.wire {
@@ -767,10 +794,8 @@ body {
 }
 
 main .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #a6ff00;
+  display: block;
+  background-color: #fff;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -782,18 +807,39 @@ main .content {
   }
 }
 
-.listing {
-  border: 1px solid #fff;
-}
-
 footer {
   background-color: #fff;
   color: #000;
   font-size: 1.4rem;
 }
 
-.about {
+.wrapper.home .content .listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(110, 18, 200, 0.1);
+}
+
+.wrapper.home .content .listing:first-of-type {
+  margin-top: 2.5rem;
+}
+
+.wrapper.home .content .listing-art {
+  width: 50%;
   border: 1px solid #fff;
+}
+
+.wrapper.home .content .listing-text {
+  width: 50%;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding-left: 5px;
 }
 
 .project {

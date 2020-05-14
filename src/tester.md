@@ -1,6 +1,6 @@
 ---
 
-layout: "layout/header.njk"
+layout: "layout/home.njk"
 title: "test"
 description: "about everything we've ever done now"
 mainImg: "/assets/img/about.png"

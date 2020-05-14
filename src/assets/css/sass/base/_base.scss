@@ -35,9 +35,19 @@ html {
 body {
     font-family: "volt", sans-serif;
     background-color: $pageBackground;
-    color: #fff;
+    color: rgba($black, 0.8);
 }
 
-.link {
-    display: block;
+.content {
+    width: 100%;
+    max-width: 86%;
+    margin: 0 auto;
+}
+
+button {
+    width: 8.8rem;
+    height: 4rem;
+    @include gradient(45deg, $list1);
+    border-radius: 5px;
+    color: $white;
 }

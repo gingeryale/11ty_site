@@ -1,7 +1,8 @@
 @import "sass/base/reset";
+@import "sass/base/vars";
+
 @import "sass/mixins/mixins";
 
-@import "sass/base/vars";
 @import "sass/type/type";
 @import "sass/base/base";
 
@@ -11,5 +12,6 @@
 @import "sass/components/listing";
 @import "sass/components/footer";
 
+@import "sass/layout/home";
 @import "sass/layout/about";
 @import "sass/layout/project";

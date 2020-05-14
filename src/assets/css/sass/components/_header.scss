@@ -1,4 +1,6 @@
 .header {
+	background: rgb(65, 5, 133);
+	@include gradient(45deg, $list1);
 	&-hero {
 		height: $headerHeight;
 	}
@@ -12,12 +14,14 @@
 		}
 		figure {
 			height: 100%;
-			padding: 2rem 7rem 0;
 			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		a.header-link {
 			.header-svg {
-				width: 88%;
+				width: 188%;
 				stroke-linecap: square;
 			}
 		}
@@ -25,10 +29,11 @@
 	&-icons {
 		width: 50%;
 		opacity: 0.68;
+		transform: scale(0.8);
 		.header-icon {
 			filter: invert(1);
 			position: absolute;
-			height: 5rem;
+			height: 4rem;
 			&.ai {
 				top: 5rem;
 				left: 5rem;
@@ -48,7 +53,7 @@
 			&.html {
 				top: 24rem;
 				left: 60rem;
-				height: 8rem;
+				height: 7rem;
 			}
 			&.js {
 				top: 12rem;
@@ -100,7 +105,7 @@
 				height: 2.3rem;
 			}
 			&.big {
-				height: 6rem;
+				height: 5rem;
 			}
 		}
 	}

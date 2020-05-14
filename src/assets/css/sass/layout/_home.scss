@@ -1,3 +1,24 @@
-.home {
-    border: 1px solid $white;
+.wrapper.home {
+    .content {
+        .listing {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: $margin2;
+            border: 1px solid rgba($purple2, 0.1);
+            &:first-of-type {
+                margin-top: $margin2;
+            }
+
+            &-art {
+                width: 50%;
+                border: 1px solid $white;
+            }
+            &-text {
+                width: 50%;
+                justify-content: left;
+                padding-left: 5px;
+            }
+        }
+    }
 }
