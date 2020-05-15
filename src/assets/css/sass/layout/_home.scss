@@ -5,12 +5,6 @@
             width: 100%;
             justify-content: space-between;
             margin-bottom: $margin2;
-            &:first-of-type {
-                margin-top: $margin2;
-            }
-            &:last-of-type {
-                margin-bottom: $margin2 * 8;
-            }
             &.fade-in {
                 opacity: 0;
                 transform: translateY(60px);

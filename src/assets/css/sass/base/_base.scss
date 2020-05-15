@@ -6,6 +6,7 @@
     box-sizing: inherit;
 }
 html {
+    height: 100%;
     font-size: 62.5%; // 1rem = 10px/16px = 62.5
 }
 
@@ -39,12 +40,24 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100%;
 }
+
 .content {
+    display: block;
+    background-color: $white;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: $margin2;
     width: 100%;
     max-width: 86%;
     margin: 0 auto;
+}
+@include responds(phone) {
+    .content {
+        display: block;
+        font-size: 2rem;
+    }
 }
 
 button {
@@ -60,5 +73,16 @@ button {
     &:hover {
         background-color: $purple2;
         color: $white;
+        a {
+            color: $white;
+        }
     }
+    a {
+        text-decoration: none;
+    }
+}
+
+/* LTR */
+[class*="heb"] {
+    direction: rtl;
 }
