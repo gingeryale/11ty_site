@@ -379,6 +379,17 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
 .content {
   width: 100%;
   max-width: 86%;
@@ -816,7 +827,7 @@ main .content {
   }
 }
 
-footer {
+.footer {
   background-color: #fff;
   color: #000;
   font-size: 1.4rem;
@@ -824,15 +835,32 @@ footer {
   background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
   display: block;
   text-align: center;
-  padding: 2rem;
+  margin-top: auto;
 }
 
-footer span {
+.footer span {
   color: #fff;
 }
 
-footer span a {
+.footer span a {
   color: inherit;
+}
+
+.footer-logo {
+  position: relative;
+  top: 1rem;
+  left: -6px;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  height: 42px;
+}
+
+.footer .footer-svg {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
 }
 
 .wrapper.home .content .listing {
