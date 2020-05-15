@@ -1,2 +1,15 @@
-.about {
+.skills {
+    .content {
+        display: flex;
+    }
+    article {
+        width: 50%;
+    }
+    ul {
+        li {
+            list-style-type: none;
+            line-height: 2;
+            font-size: 2rem;
+        }
+    }
 }

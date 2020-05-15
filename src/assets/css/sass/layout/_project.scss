@@ -35,4 +35,23 @@
             margin: $margin2 auto;
         }
     }
+    button {
+        border-radius: 3px;
+        position: fixed;
+        bottom: 8rem;
+        left: 0;
+        width: 6rem;
+        height: 4rem;
+        font-size: 1.4rem;
+        border: 2px solid rgba($black, 0.2);
+        a {
+            color: $black;
+        }
+        &:hover {
+            background-color: rgba($black, 0.5);
+            a {
+                color: $white;
+            }
+        }
+    }
 }

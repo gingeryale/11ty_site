@@ -9,7 +9,7 @@ const options = {
     threshold: 1, // how much is not the page
     rootMargin: "0px 0px -50px 0px" // works like margin
 };
-const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+const appearOnScroll = new IntersectionObserver(function (entries, options) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return
