@@ -1,4 +1,3 @@
-console.log("READ dev dev dev dev dev dev dev dev dev dev dev !!!!!!!!!!!!!!");
 
 const list = document.querySelector('.listing');
 const faders = document.querySelectorAll('.fade-in');

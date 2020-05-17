@@ -2,14 +2,19 @@
     .content {
         display: flex;
     }
-    article {
-        width: 50%;
+    section {
+        border: 1px solid $black;
     }
-    ul {
+    article {
+        h3 {
+            display: block;
+            width: 100%;
+        }
         li {
             list-style-type: none;
             line-height: 2;
             font-size: 2rem;
+            display: inline;
         }
     }
 }

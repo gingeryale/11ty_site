@@ -21,7 +21,7 @@
 		}
 		a.header-link {
 			.header-svg {
-				width: 188%;
+				width: 88%;
 				stroke-linecap: square;
 			}
 		}
@@ -165,16 +165,22 @@
 		font-size: 1.6rem;
 		justify-content: flex-end;
 		height: $navHeight;
+		ul {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 		li {
 			display: flex;
 			align-items: center;
 			list-style-type: none;
 			margin-right: 2rem;
-			a {
-				color: $white;
-				text-decoration: none;
-				font-size: 2rem;
-			}
+			display: inline;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
+			font-size: 2rem;
 		}
 	}
 	@include responds(phone) {
