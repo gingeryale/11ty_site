@@ -433,6 +433,7 @@ button:hover a {
 
 button a {
   text-decoration: none;
+  display: block;
 }
 
 /* LTR */
@@ -460,11 +461,7 @@ button a {
   height: calc(100% - 6rem);
 }
 
-.header-art-icons {
-  width: 50%;
-}
-
-.header-art figure {
+.header-art .header-figure-ao {
   height: 100%;
   width: 50%;
   display: -webkit-box;
@@ -483,106 +480,105 @@ button a {
   stroke-linecap: square;
 }
 
-.header-icons {
+.header-figure-icons {
   width: 50%;
-  opacity: 0.68;
+  opacity: 0.8;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
 
-.header-icons .header-icon {
+.header-figure-icons .header-icon {
+  position: absolute;
   -webkit-filter: invert(1);
           filter: invert(1);
-  position: absolute;
-  height: 4rem;
 }
 
-.header-icons .header-icon.ai {
+.header-figure-icons .header-icon.ai {
   top: 5rem;
   left: 5rem;
 }
 
-.header-icons .header-icon.psd {
+.header-figure-icons .header-icon.psd {
   top: 2rem;
   left: 26rem;
 }
 
-.header-icons .header-icon.idd {
+.header-figure-icons .header-icon.idd {
   top: 28rem;
   left: 20rem;
 }
 
-.header-icons .header-icon.css {
+.header-figure-icons .header-icon.css {
   top: 16rem;
   left: 34rem;
 }
 
-.header-icons .header-icon.html {
+.header-figure-icons .header-icon.html {
   top: 24rem;
   left: 60rem;
   height: 7rem;
 }
 
-.header-icons .header-icon.js {
+.header-figure-icons .header-icon.js {
   top: 12rem;
   left: 18rem;
 }
 
-.header-icons .header-icon.ppr {
+.header-figure-icons .header-icon.ppr {
   top: 14rem;
   left: 5.5rem;
 }
 
-.header-icons .header-icon.git {
+.header-figure-icons .header-icon.git {
   top: 2rem;
   left: 48rem;
 }
 
-.header-icons .header-icon.ae {
+.header-figure-icons .header-icon.ae {
   top: 31rem;
   left: 31rem;
 }
 
-.header-icons .header-icon.sql {
+.header-figure-icons .header-icon.sql {
   top: 28rem;
   left: 48rem;
 }
 
-.header-icons .header-icon.office {
+.header-figure-icons .header-icon.office {
   top: 22rem;
   left: 44rem;
 }
 
-.header-icons .header-icon.sass {
+.header-figure-icons .header-icon.sass {
   top: 6rem;
   left: 40rem;
 }
 
-.header-icons .header-icon.wp {
+.header-figure-icons .header-icon.wp {
   top: 12.5rem;
   left: 54rem;
 }
 
-.header-icons .header-icon.react {
+.header-figure-icons .header-icon.react {
   top: 8rem;
   left: 64rem;
 }
 
-.header-icons .header-icon.nodejs {
+.header-figure-icons .header-icon.nodejs {
   top: 24rem;
   left: 6rem;
 }
 
-.header-icons .header-icon.apple {
+.header-figure-icons .header-icon.apple {
   top: 20rem;
   left: 26rem;
 }
 
-.header-icons .header-icon.small {
+.header-figure-icons .header-icon.small {
   height: 2.3rem;
 }
 
-.header-icons .header-icon.big {
+.header-figure-icons .header-icon.big {
   height: 5rem;
 }
 
@@ -854,14 +850,16 @@ button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #fff;
   color: #000;
   height: 6rem;
   background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
   margin-top: auto;
   color: #fff;
+  padding: 0 2.5rem;
 }
 
 .footer span {

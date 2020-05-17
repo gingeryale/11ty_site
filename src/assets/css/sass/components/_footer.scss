@@ -1,12 +1,13 @@
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: $white;
     color: $black;
     height: 6rem;
     @include gradient(45deg, $list1);
     margin-top: auto;
     color: $white;
+    padding: 0 $margin2;
     span {
         font-size: 1.4rem;
         width: 33%;
