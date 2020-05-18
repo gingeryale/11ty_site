@@ -2,18 +2,27 @@
     .content {
         display: flex;
     }
-    section {
-        border: 1px solid $black;
-    }
     article {
-        h3 {
-            display: block;
-            width: 100%;
+        margin: 0 auto;
+        width: 100%;
+    }
+    &-links {
+        border: 1px solid $black;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: $margin2;
+        span {
+            display: flex;
+            width: 50%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
         }
+    }
+    &-lists {
         li {
             list-style-type: none;
             line-height: 2;
-            font-size: 2rem;
             display: inline;
         }
     }
