@@ -20,10 +20,17 @@
         }
     }
     &-lists {
-        li {
-            list-style-type: none;
-            line-height: 2;
-            display: inline;
+        span {
+            display: inline-flex;
+            border: 1px solid red;
+            margin: 5px;
+            border-radius: 3px;
+            padding: $margin2;
+            li {
+                list-style-type: none;
+                line-height: 2;
+                display: inline-block;
+            }
         }
     }
 }

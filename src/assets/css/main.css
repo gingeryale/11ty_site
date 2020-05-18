@@ -993,10 +993,20 @@ button a {
           justify-content: center;
 }
 
-.skills-lists li {
+.skills-lists span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid red;
+  margin: 5px;
+  border-radius: 3px;
+  padding: 2.5rem;
+}
+
+.skills-lists span li {
   list-style-type: none;
   line-height: 2;
-  display: inline;
+  display: inline-block;
 }
 
 .wrapper.project {
