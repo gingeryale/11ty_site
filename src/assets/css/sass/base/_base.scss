@@ -34,8 +34,12 @@ html {
 }
 
 body {
-    font-family: "volt", sans-serif;
+    font-family: "oxy", serif;
     color: rgba($black, 0.8);
+}
+h3,
+h4 {
+    font-family: "Grr", serif;
 }
 .wrapper {
     display: flex;
