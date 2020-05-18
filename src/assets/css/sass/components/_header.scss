@@ -18,15 +18,12 @@
 		}
 		a.header-link {
 			.header-svg {
-				width: 88%;
 				stroke-linecap: square;
 			}
 		}
 	}
 	&-figure-icons {
 		width: 50%;
-		opacity: 0.8;
-		transform: scale(0.9);
 		.header-icon {
 			position: absolute;
 			filter: invert(1);
