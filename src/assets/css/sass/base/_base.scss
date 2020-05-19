@@ -12,12 +12,12 @@ html {
 
 @mixin responds($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: 37.5em) {
+        @media (max-width: 30em) {
             @content;
         } // 600px / 16
     }
     @if $breakpoint == tab-port {
-        @media (max-width: 56.25em) {
+        @media (max-width: 62.5em) {
             @content;
         } // 900px
     }
@@ -57,10 +57,21 @@ h4 {
     max-width: 86%;
     margin: 0 auto;
 }
+@include responds(tab-land) {
+    .content {
+        border: 10px solid black;
+    }
+}
+
+@include responds(tab-port) {
+    .content {
+        border: 10px solid blue;
+    }
+}
+
 @include responds(phone) {
     .content {
-        display: block;
-        font-size: 2rem;
+        border: 10px solid red;
     }
 }
 

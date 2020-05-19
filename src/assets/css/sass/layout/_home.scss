@@ -24,6 +24,31 @@
             padding-left: 5px;
         }
     }
+    @include responds(tab-land) {
+    }
+
+    @include responds(tab-port) {
+        .listing {
+            width: 100%;
+            display: block;
+            text-align: center;
+            &-art,
+            &-text {
+                width: 100%;
+            }
+        }
+        [class^="listing-text-"] {
+            width: 80%;
+            margin: $margin2 auto;
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+
+    @include responds(phone) {
+    }
 }
 
 @keyframes fadeEffect {

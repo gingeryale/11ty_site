@@ -10,15 +10,14 @@
 		position: relative;
 		height: calc(100% - #{$navHeight});
 		.header-figure-ao {
-			height: 100%;
-			width: 50%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin: 0 auto;
 		}
 		a.header-link {
 			display: block;
-			border: 1px solid white;
+			// border: 1px solid white;
 			.header-svg {
 				stroke-linecap: square;
 			}
@@ -27,130 +26,7 @@
 	&-figure-icons {
 		width: 50%;
 		.header-icon {
-			position: absolute;
 			filter: invert(1);
-			&.ai {
-				top: 5rem;
-				left: 5rem;
-			}
-			&.psd {
-				top: 2rem;
-				left: 26rem;
-			}
-			&.idd {
-				top: 28rem;
-				left: 20rem;
-			}
-			&.css {
-				top: 16rem;
-				left: 34rem;
-			}
-			&.html {
-				top: 24rem;
-				left: 60rem;
-				height: 7rem;
-			}
-			&.js {
-				top: 12rem;
-				left: 18rem;
-			}
-			&.ppr {
-				top: 14rem;
-				left: 5.5rem;
-			}
-			&.git {
-				top: 2rem;
-				left: 48rem;
-			}
-			&.ae {
-				top: 31rem;
-				left: 31rem;
-			}
-			&.sql {
-				top: 28rem;
-				left: 48rem;
-			}
-			&.office {
-				top: 22rem;
-				left: 44rem;
-			}
-			&.sass {
-				top: 6rem;
-				left: 40rem;
-			}
-			&.wp {
-				top: 12.5rem;
-				left: 54rem;
-			}
-
-			&.react {
-				top: 8rem;
-				left: 64rem;
-			}
-			&.nodejs {
-				top: 24rem;
-				left: 6rem;
-			}
-			&.apple {
-				top: 20rem;
-				left: 26rem;
-			}
-			&.small {
-				height: 2.3rem;
-			}
-			&.big {
-				height: 5rem;
-			}
-		}
-	}
-	ul.wire {
-		display: none;
-		text-align: left;
-		width: 100%;
-		position: absolute;
-		top: -82px;
-		border-bottom: 3px solid $wire;
-		white-space: nowrap;
-		padding: 0 8rem;
-		height: 100px;
-		li {
-			position: relative;
-			list-style: none;
-			margin: 0 15px;
-			padding: 0;
-			display: inline-block;
-			width: 15px;
-			height: 30px;
-			border-radius: 50%;
-			top: 102px;
-			background: $white;
-			/* animation */
-			animation-name: even-bulb;
-			animation-duration: 1s;
-			animation-iteration-count: 4;
-			animation-fill-mode: both;
-			&:nth-child(odd) {
-				animation-name: odd-bulb;
-				animation-duration: 1s;
-				animation-iteration-count: 4;
-				animation-fill-mode: both;
-			}
-			&:nth-child(4) {
-				animation-name: actual-odd-bulb;
-				animation-duration: 2s;
-				animation-iteration-count: 8;
-				animation-fill-mode: both;
-			}
-			&:before {
-				content: "";
-				position: absolute;
-				border-radius: 5px;
-				width: 15px;
-				height: 10px;
-				background: $bulbs;
-				top: -5px;
-				left: 0;
-			}
 		}
 	}
 
@@ -182,6 +58,33 @@
 		nav {
 			display: block;
 			font-size: 2rem;
+		}
+	}
+	@include responds(tab-land) {
+	}
+
+	@include responds(tab-port) {
+		overflow: hidden;
+		&-hero {
+			height: 32rem;
+		}
+		&-icon {
+			opacity: 0.4;
+			position: absolute;
+			top: -6rem;
+			left: -8rem;
+		}
+		&-figure-icons {
+		}
+	}
+
+	@include responds(phone) {
+		&-svg {
+			position: absolute;
+			transform: translate(10px, 10px);
+			top: -2px;
+			left: 1rem;
+			width: 90%;
 		}
 	}
 }

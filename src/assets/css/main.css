@@ -430,10 +430,21 @@ h4 {
   margin: 0 auto;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 75em) {
   .content {
-    display: block;
-    font-size: 2rem;
+    border: 10px solid black;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .content {
+    border: 10px solid blue;
+  }
+}
+
+@media (max-width: 30em) {
+  .content {
+    border: 10px solid red;
   }
 }
 
@@ -495,8 +506,6 @@ button a {
 }
 
 .header-art .header-figure-ao {
-  height: 100%;
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,11 +515,11 @@ button a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 auto;
 }
 
 .header-art a.header-link {
   display: block;
-  border: 1px solid white;
 }
 
 .header-art a.header-link .header-svg {
@@ -522,165 +531,8 @@ button a {
 }
 
 .header-figure-icons .header-icon {
-  position: absolute;
   -webkit-filter: invert(1);
           filter: invert(1);
-}
-
-.header-figure-icons .header-icon.ai {
-  top: 5rem;
-  left: 5rem;
-}
-
-.header-figure-icons .header-icon.psd {
-  top: 2rem;
-  left: 26rem;
-}
-
-.header-figure-icons .header-icon.idd {
-  top: 28rem;
-  left: 20rem;
-}
-
-.header-figure-icons .header-icon.css {
-  top: 16rem;
-  left: 34rem;
-}
-
-.header-figure-icons .header-icon.html {
-  top: 24rem;
-  left: 60rem;
-  height: 7rem;
-}
-
-.header-figure-icons .header-icon.js {
-  top: 12rem;
-  left: 18rem;
-}
-
-.header-figure-icons .header-icon.ppr {
-  top: 14rem;
-  left: 5.5rem;
-}
-
-.header-figure-icons .header-icon.git {
-  top: 2rem;
-  left: 48rem;
-}
-
-.header-figure-icons .header-icon.ae {
-  top: 31rem;
-  left: 31rem;
-}
-
-.header-figure-icons .header-icon.sql {
-  top: 28rem;
-  left: 48rem;
-}
-
-.header-figure-icons .header-icon.office {
-  top: 22rem;
-  left: 44rem;
-}
-
-.header-figure-icons .header-icon.sass {
-  top: 6rem;
-  left: 40rem;
-}
-
-.header-figure-icons .header-icon.wp {
-  top: 12.5rem;
-  left: 54rem;
-}
-
-.header-figure-icons .header-icon.react {
-  top: 8rem;
-  left: 64rem;
-}
-
-.header-figure-icons .header-icon.nodejs {
-  top: 24rem;
-  left: 6rem;
-}
-
-.header-figure-icons .header-icon.apple {
-  top: 20rem;
-  left: 26rem;
-}
-
-.header-figure-icons .header-icon.small {
-  height: 2.3rem;
-}
-
-.header-figure-icons .header-icon.big {
-  height: 5rem;
-}
-
-.header ul.wire {
-  display: none;
-  text-align: left;
-  width: 100%;
-  position: absolute;
-  top: -82px;
-  border-bottom: 3px solid #7800a5;
-  white-space: nowrap;
-  padding: 0 8rem;
-  height: 100px;
-}
-
-.header ul.wire li {
-  position: relative;
-  list-style: none;
-  margin: 0 15px;
-  padding: 0;
-  display: inline-block;
-  width: 15px;
-  height: 30px;
-  border-radius: 50%;
-  top: 102px;
-  background: #fff;
-  /* animation */
-  -webkit-animation-name: even-bulb;
-          animation-name: even-bulb;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.header ul.wire li:nth-child(odd) {
-  -webkit-animation-name: odd-bulb;
-          animation-name: odd-bulb;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.header ul.wire li:nth-child(4) {
-  -webkit-animation-name: actual-odd-bulb;
-          animation-name: actual-odd-bulb;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: 8;
-          animation-iteration-count: 8;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-.header ul.wire li:before {
-  content: "";
-  position: absolute;
-  border-radius: 5px;
-  width: 15px;
-  height: 10px;
-  background: #4e0875;
-  top: -5px;
-  left: 0;
 }
 
 .header nav {
@@ -725,10 +577,36 @@ button a {
   font-size: 2rem;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 30em) {
   .header nav {
     display: block;
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .header {
+    overflow: hidden;
+  }
+  .header-hero {
+    height: 32rem;
+  }
+  .header-icon {
+    opacity: 0.4;
+    position: absolute;
+    top: -6rem;
+    left: -8rem;
+  }
+}
+
+@media (max-width: 30em) {
+  .header-svg {
+    position: absolute;
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+    top: -2px;
+    left: 1rem;
+    width: 90%;
   }
 }
 
@@ -963,6 +841,24 @@ button a {
       -ms-flex-pack: left;
           justify-content: left;
   padding-left: 5px;
+}
+
+@media (max-width: 62.5em) {
+  .home .listing {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .home .listing-art, .home .listing-text {
+    width: 100%;
+  }
+  .home [class^="listing-text-"] {
+    width: 80%;
+    margin: 2.5rem auto;
+  }
+  .home img {
+    width: 80%;
+  }
 }
 
 @-webkit-keyframes fadeEffect {
