@@ -57,23 +57,6 @@ h4 {
     max-width: 86%;
     margin: 0 auto;
 }
-@include responds(tab-land) {
-    .content {
-        border: 10px solid black;
-    }
-}
-
-@include responds(tab-port) {
-    .content {
-        border: 10px solid blue;
-    }
-}
-
-@include responds(phone) {
-    .content {
-        border: 10px solid red;
-    }
-}
 
 button {
     width: 10rem;

@@ -1,9 +1,8 @@
 .header {
 	background: rgb(65, 5, 133);
 	@include gradient(45deg, $list1);
-	&-hero {
-		height: $headerHeight;
-	}
+	height: $headerHeight;
+	overflow: hidden;
 	&-art {
 		display: flex;
 		justify-content: space-between;
@@ -54,90 +53,28 @@
 			font-size: 2rem;
 		}
 	}
-	@include responds(phone) {
-		nav {
-			display: block;
-			font-size: 2rem;
-		}
-	}
-	@include responds(tab-land) {
-	}
 
 	@include responds(tab-port) {
-		overflow: hidden;
 		&-hero {
 			height: 32rem;
 		}
 		&-icon {
-			opacity: 0.4;
-			position: absolute;
-			top: -6rem;
-			left: -8rem;
+			opacity: 0.5;
+			position: relative;
+			top: 50%;
+			left: 50%;
 		}
-		&-figure-icons {
+		.header-figure-ao {
+			display: block;
+			position: absolute;
+			left: $margin2;
+			bottom: $margin2;
 		}
 	}
 
 	@include responds(phone) {
 		&-svg {
-			position: absolute;
-			transform: translate(10px, 10px);
-			top: -2px;
-			left: 1rem;
-			width: 90%;
+			width: 96%;
 		}
-	}
-}
-
-@keyframes even-bulb {
-	0%,
-	100% {
-		background: rgba(255, 230, 65, 1);
-		box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
-	}
-	50% {
-		background: rgba(255, 230, 65, 0.5);
-		box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
-	}
-}
-
-@keyframes odd-bulb {
-	50% {
-		background: rgba(255, 65, 185, 1);
-		box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 1);
-	}
-	0%,
-	100% {
-		background: rgba(255, 65, 185, 0.7);
-		box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.5);
-	}
-}
-
-@keyframes actual-odd-bulb {
-	20% {
-		background: rgba(255, 230, 65, 1);
-		box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
-	}
-	0%,
-	10% {
-		background: rgba(255, 230, 65, 1);
-		box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
-	}
-}
-
-@keyframes moveRight {
-	0%,
-	10% {
-		transform: translateX(0);
-		opacity: 0;
-	}
-	20%,
-	80% {
-		opacity: 1;
-	}
-	90%,
-	100% {
-		transform: translateX(10em);
-		opacity: 0;
 	}
 }
