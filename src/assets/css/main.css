@@ -399,7 +399,7 @@ html {
 }
 
 body {
-  font-family: "ar2", serif;
+  font-family: "ar2", sans-serif;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -462,11 +462,16 @@ button:hover a {
 button a {
   text-decoration: none;
   display: block;
+  color: #6e12c8;
 }
 
 /* LTR */
 [class*="heb"] {
   direction: rtl;
+}
+
+[class*="heb"] button {
+  border: 2px solid #a402fa;
 }
 
 .header {
@@ -1026,11 +1031,13 @@ button a {
 }
 
 .skills-links-link {
+  fill: rgba(0, 0, 0, 0.8);
   display: block;
   display: block;
   width: 75px;
   text-align: center;
   text-decoration: none;
+  color: #410585;
 }
 
 .skills-lists {

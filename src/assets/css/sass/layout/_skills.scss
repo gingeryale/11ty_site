@@ -18,11 +18,13 @@
             justify-content: center;
         }
         &-link {
+            fill: rgba($black, 0.8);
             display: block;
             display: block;
             width: 75px;
             text-align: center;
             text-decoration: none;
+            color: $purple1;
         }
     }
     &-lists {
