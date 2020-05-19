@@ -23,6 +23,13 @@ html {
 
 body {
     margin: 0;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern", "liga", "calt";
+    -ms-font-feature-settings: "kern", "liga", "calt";
+    -webkit-font-feature-settings: "kern", "liga", "calt";
+    font-feature-settings: "kern", "liga", "calt";
 }
 
 /**
