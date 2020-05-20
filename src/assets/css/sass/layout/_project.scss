@@ -1,40 +1,6 @@
-.wrapper.project {
+.project {
     margin: 0 auto;
     justify-content: center;
-    .project {
-        order: 1px solid red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .project-intro {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            figure {
-                width: 50%;
-            }
-            ul {
-                width: 50%;
-            }
-        }
-        ul {
-            margin-top: $margin2;
-            li {
-                line-height: 2;
-            }
-        }
-        figure {
-            margin: $margin2 0;
-        }
-        [class*="project-text-"] {
-            border-top: 2px solid rgba($black, 0.2);
-            border-bottom: 2px solid rgba($black, 0.2);
-            padding: $margin2 0;
-            width: 100%;
-            max-width: 80rem;
-            margin: $margin2 auto;
-        }
-    }
     button {
         border-radius: 3px;
         position: fixed;
@@ -53,6 +19,55 @@
             a {
                 color: $white;
             }
+        }
+    }
+}
+.project-body {
+    order: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        margin-top: $margin2;
+    }
+    li {
+        line-height: 2;
+    }
+    figure {
+        margin: $margin2 0;
+    }
+    [class*="project-text-"] {
+        border-top: 2px solid rgba($black, 0.2);
+        border-bottom: 2px solid rgba($black, 0.2);
+        padding: $margin2 0;
+        width: 100%;
+        max-width: 80rem;
+        margin: $margin2 auto;
+    }
+    @include responds(tab-port) {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.project-intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    figure,
+    ul {
+        width: 50%;
+    }
+
+    @include responds(tab-port) {
+        flex-direction: column;
+        figure,
+        ul {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
         }
     }
 }

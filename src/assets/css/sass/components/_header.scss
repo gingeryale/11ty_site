@@ -55,7 +55,7 @@
 	}
 
 	@include responds(tab-port) {
-		&-hero {
+		& {
 			height: 32rem;
 		}
 		&-icon {

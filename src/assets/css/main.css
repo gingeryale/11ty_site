@@ -557,8 +557,8 @@ button a {
   font-size: 2rem;
 }
 
-@media (max-width: 62.5em) {
-  .header-hero {
+@media (max-width: 64em) {
+  .header {
     height: 32rem;
   }
   .header-icon {
@@ -692,7 +692,7 @@ button a {
   padding-left: 5px;
 }
 
-@media (max-width: 62.5em) {
+@media (max-width: 64em) {
   .home .listing {
     width: 100%;
     display: block;
@@ -824,14 +824,38 @@ button a {
   padding: 2.5rem 0;
 }
 
-.wrapper.project {
+.project {
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.wrapper.project .project {
+.project button {
+  border-radius: 3px;
+  position: fixed;
+  bottom: 8rem;
+  left: 0;
+  width: 6rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.project button a {
+  color: #000;
+  display: block;
+}
+
+.project button:hover {
+  background-color: rgba(110, 18, 200, 0.5);
+}
+
+.project button:hover a {
+  color: #fff;
+}
+
+.project-body {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1px solid red;
           order: 1px solid red;
@@ -847,7 +871,34 @@ button a {
           align-items: center;
 }
 
-.wrapper.project .project .project-intro {
+.project-body ul {
+  margin-top: 2.5rem;
+}
+
+.project-body li {
+  line-height: 2;
+}
+
+.project-body figure {
+  margin: 2.5rem 0;
+}
+
+.project-body [class*="project-text-"] {
+  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 2.5rem 0;
+  width: 100%;
+  max-width: 80rem;
+  margin: 2.5rem auto;
+}
+
+@media (max-width: 64em) {
+  .project-body img {
+    width: 100%;
+  }
+}
+
+.project-intro {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,56 +908,30 @@ button a {
           justify-content: space-between;
 }
 
-.wrapper.project .project .project-intro figure {
+.project-intro figure,
+.project-intro ul {
   width: 50%;
 }
 
-.wrapper.project .project .project-intro ul {
-  width: 50%;
-}
-
-.wrapper.project .project ul {
-  margin-top: 2.5rem;
-}
-
-.wrapper.project .project ul li {
-  line-height: 2;
-}
-
-.wrapper.project .project figure {
-  margin: 2.5rem 0;
-}
-
-.wrapper.project .project [class*="project-text-"] {
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  padding: 2.5rem 0;
-  width: 100%;
-  max-width: 80rem;
-  margin: 2.5rem auto;
-}
-
-.wrapper.project button {
-  border-radius: 3px;
-  position: fixed;
-  bottom: 8rem;
-  left: 0;
-  width: 6rem;
-  height: 4rem;
-  font-size: 1.4rem;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.wrapper.project button a {
-  color: #000;
-  display: block;
-}
-
-.wrapper.project button:hover {
-  background-color: rgba(110, 18, 200, 0.5);
-}
-
-.wrapper.project button:hover a {
-  color: #fff;
+@media (max-width: 64em) {
+  .project-intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-intro figure,
+  .project-intro ul {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
