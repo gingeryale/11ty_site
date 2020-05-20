@@ -6,11 +6,12 @@ const faders = document.querySelectorAll('.fade-in');
 const options = {
     root: null, // viewport
     threshold: 1, // how much is not the page
-    rootMargin: "0px 0px 180px 0px" // works like margin
+    rootMargin: "0px 0px 220px 0px" // works like margin
 };
 const appearOnScroll = new IntersectionObserver(function (entries, options) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
+            console.log("not");
             return
         }
         console.log(entry.target);

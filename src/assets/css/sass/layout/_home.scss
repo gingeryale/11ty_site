@@ -41,7 +41,17 @@
         }
 
         img {
-            width: 80%;
+            width: 40%;
+        }
+    }
+}
+
+@include responds(phone-land) {
+    .home {
+        .listing {
+            &.fade-in {
+                opacity: 1;
+            }
         }
     }
 }

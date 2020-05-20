@@ -706,7 +706,13 @@ button a {
     margin: 2.5rem auto;
   }
   .home img {
-    width: 80%;
+    width: 40%;
+  }
+}
+
+@media (max-height: 31.25em) {
+  .home .listing.fade-in {
+    opacity: 1;
   }
 }
 
