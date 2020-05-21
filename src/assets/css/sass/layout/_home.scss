@@ -4,6 +4,18 @@
         width: 100%;
         justify-content: space-between;
         margin-bottom: $margin2;
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 12px;
+            width: 100%;
+            background: #cb5a5e;
+            background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 12px, transparent 10px, transparent 23px);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-bottom: 0;
+        }
         &.fade-in {
             opacity: 0;
             transform: translateY(60px);
@@ -16,7 +28,6 @@
 
         &-art {
             width: 50%;
-            border: 1px solid $white;
         }
         &-text {
             width: 50%;

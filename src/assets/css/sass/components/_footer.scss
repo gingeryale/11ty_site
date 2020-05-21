@@ -1,37 +1,43 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: $white;
-    color: $black;
-    height: 6rem;
-    @include gradient(45deg, $list1);
-    margin-top: auto;
-    color: $white;
-    padding: 0 $margin2;
-    span {
-        font-size: 1.4rem;
-        width: 33%;
-        padding: 5px;
-        padding: $margin2 0;
-
-        &:last-of-type {
-            width: 8%;
-            padding: 1rem 0;
+    display: grid;
+    grid-template-rows: 16rem;
+    grid-template-columns: 4rem 1fr 1fr 4rem;
+    grid-gap: 2rem;
+    font-size: 1.6rem;
+    border-top: 1px dashed $purple2;
+    padding-top: 4rem;
+    &-section-text {
+        grid-row: 1;
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+    }
+    &-section-svg {
+        grid-row: 1;
+        grid-column: 3 / 4;
+        display: flex;
+    }
+    &-button {
+        width: 22rem;
+        margin-top: 1rem;
+    }
+    @include responds(tab-port) {
+        & {
+            grid-template-rows: repeat(2, 100px);
+            grid-template-columns: repeat(3, 1fr);
+            padding: 4rem 0;
+            &-section-text {
+                grid-row: 1;
+                grid-column: 2 / 3;
+                align-items: center;
+            }
+            &-section-svg {
+                grid-row: 2;
+                grid-column: 2 / 3;
+                display: block;
+                line-height: 1.6;
+            }
         }
-    }
-    &-link {
-        color: inherit;
-        display: inline-flex;
-    }
-
-    &-logo {
-        position: relative;
-        display: block;
-    }
-    .footer-svg {
-        fill: #fff;
-        stroke: #fff;
-        stroke-width: 2;
-        stroke-miterlimit: 10;
     }
 }
