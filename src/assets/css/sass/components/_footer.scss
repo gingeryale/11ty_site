@@ -13,14 +13,13 @@
         flex-direction: column;
         line-height: 2;
     }
+    &-link {
+        color: $purple4;
+    }
     &-section-svg {
         grid-row: 1;
         grid-column: 3 / 4;
         display: flex;
-    }
-    .hidden {
-        opacity: 0.9;
-        display: none;
     }
     &-button {
         @extend button;

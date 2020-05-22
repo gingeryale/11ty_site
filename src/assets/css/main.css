@@ -457,6 +457,10 @@ button a, .footer-button a {
   color: #6e12c8;
 }
 
+.hidden {
+  display: none;
+}
+
 /* LTR */
 [class*="heb"] {
   direction: rtl;
@@ -635,6 +639,10 @@ button a, .footer-button a {
   line-height: 2;
 }
 
+.footer-link {
+  color: #9c07ff;
+}
+
 .footer-section-svg {
   -ms-grid-row: 1;
   grid-row: 1;
@@ -644,11 +652,6 @@ button a, .footer-button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer .hidden {
-  opacity: 0.9;
-  display: none;
 }
 
 .footer-button {
@@ -881,6 +884,13 @@ button a, .footer-button a {
 
 .skills-text [class^="skills-text-"] {
   padding: 2.5rem 0;
+}
+
+.skills-text .heart {
+  fill: red;
+  position: relative;
+  top: 4px;
+  width: 18px;
 }
 
 @media (max-width: 30em) {

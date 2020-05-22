@@ -52,6 +52,12 @@
         [class^="skills-text-"] {
             padding: $margin2 0;
         }
+        .heart {
+            fill: red;
+            position: relative;
+            top: 4px;
+            width: 18px;
+        }
     }
     @include responds(phone) {
         &-links {

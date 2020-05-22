@@ -10,16 +10,13 @@ document.querySelector('#themeSwitch').addEventListener('click', function (e) {
 
 function setNight() {
     document.body.setAttribute('data-theme', 'dark');
-    themeButton.innerHTML = "Switch to Day Theme";
+    themeButton.innerHTML = "Switch to Day Mode";
     localStorage.setItem("checkboxTheme", "dark");
-
-    console.log(localStorage.getItem("checkboxTheme"));
-
 }
 
 function setDay() {
     document.body.removeAttribute('data-theme');
-    themeButton.innerHTML = "Switch to Dark Theme";
+    themeButton.innerHTML = "Switch to Night Mode";
     localStorage.removeItem("checkboxTheme");
 }
 
