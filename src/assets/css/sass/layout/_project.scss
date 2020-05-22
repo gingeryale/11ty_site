@@ -1,26 +1,6 @@
 .project {
     margin: 0 auto;
     justify-content: center;
-    button {
-        border-radius: 3px;
-        position: fixed;
-        bottom: 8rem;
-        left: 0;
-        width: 6rem;
-        height: 4rem;
-        font-size: 1.4rem;
-        border: 2px solid rgba($black, 0.2);
-        a {
-            color: $black;
-            display: block;
-        }
-        &:hover {
-            background-color: rgba($purple2, 0.5);
-            a {
-                color: $white;
-            }
-        }
-    }
 }
 .project-body {
     order: 1px solid red;
@@ -47,6 +27,26 @@
     @include responds(tab-port) {
         img {
             width: 100%;
+        }
+    }
+    button {
+        border-radius: 3px;
+        position: fixed;
+        bottom: 22rem;
+        left: 0;
+        width: 6rem;
+        height: 4rem;
+        font-size: 1.4rem;
+        border: 2px solid rgba($black, 0.2);
+        a {
+            color: $black;
+            display: block;
+        }
+        &:hover {
+            background-color: rgba($purple2, 0.5);
+            a {
+                color: $white;
+            }
         }
     }
 }

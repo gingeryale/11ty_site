@@ -16,6 +16,7 @@
             align-items: center;
             flex-direction: column;
             justify-content: center;
+            align-self: baseline;
         }
         &-link {
             fill: rgba($black, 0.8);
@@ -24,7 +25,7 @@
             width: 75px;
             text-align: center;
             text-decoration: none;
-            color: $purple1;
+            color: $purple4;
         }
     }
     &-lists {
@@ -50,6 +51,14 @@
         padding: $margin2 0;
         [class^="skills-text-"] {
             padding: $margin2 0;
+        }
+    }
+    @include responds(phone) {
+        &-links {
+            flex-direction: column;
+            span {
+                width: 100%;
+            }
         }
     }
 }

@@ -159,7 +159,7 @@ img {
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
-button,
+button, .footer-button,
 input,
 optgroup,
 select,
@@ -178,7 +178,7 @@ textarea {
    * Show the overflow in IE.
    * 1. Show the overflow in Edge.
    */
-button,
+button, .footer-button,
 input {
   /* 1 */
   overflow: visible;
@@ -188,7 +188,7 @@ input {
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
    * 1. Remove the inheritance of text transform in Firefox.
    */
-button,
+button, .footer-button,
 select {
   /* 1 */
   text-transform: none;
@@ -197,7 +197,7 @@ select {
 /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
-button,
+button, .footer-button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -207,7 +207,7 @@ button,
 /**
    * Remove the inner border and padding in Firefox.
    */
-button::-moz-focus-inner,
+button::-moz-focus-inner, .footer-button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
@@ -218,7 +218,7 @@ button::-moz-focus-inner,
 /**
    * Restore the focus styles unset by the previous rule.
    */
-button:-moz-focusring,
+button:-moz-focusring, .footer-button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
@@ -421,7 +421,6 @@ h4 {
 
 .content {
   display: block;
-  background-color: #fff;
   font-size: 1.6rem;
   line-height: 1.5;
   padding: 2.5rem;
@@ -430,7 +429,7 @@ h4 {
   margin: 0 auto;
 }
 
-button {
+button, .footer-button {
   width: 10rem;
   height: 4rem;
   border: 2px solid #6e12c8;
@@ -443,16 +442,16 @@ button {
   margin-top: 2.5rem;
 }
 
-button:hover {
+button:hover, .footer-button:hover {
   background-color: #6e12c8;
   color: #fff;
 }
 
-button:hover a {
+button:hover a, .footer-button:hover a {
   color: #fff;
 }
 
-button a {
+button a, .footer-button a {
   text-decoration: none;
   display: block;
   color: #6e12c8;
@@ -463,7 +462,7 @@ button a {
   direction: rtl;
 }
 
-[class*="heb"] button {
+[class*="heb"] button, [class*="heb"] .footer-button {
   border: 2px solid #a402fa;
 }
 
@@ -616,8 +615,8 @@ button a {
       grid-template-columns: 4rem 1fr 1fr 4rem;
   grid-gap: 2rem;
   font-size: 1.6rem;
-  border-top: 1px dashed #6e12c8;
-  padding-top: 4rem;
+  border-top: 2px dashed #9dddee;
+  padding: 5rem;
 }
 
 .footer-section-text {
@@ -647,9 +646,22 @@ button a {
   display: flex;
 }
 
+.footer .hidden {
+  opacity: 0.9;
+  display: none;
+}
+
 .footer-button {
   width: 22rem;
   margin-top: 1rem;
+  text-align: center;
+}
+
+@supports (-moz-appearance: none) {
+  .footer-button {
+    padding: 0.8rem;
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 64em) {
@@ -658,7 +670,7 @@ button a {
         grid-template-rows: repeat(2, 100px);
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    padding: 4rem 0;
+    padding: 2.5rem 0 4rem;
   }
   .footer-section-text {
     -ms-grid-row: 1;
@@ -692,19 +704,6 @@ button a {
   margin-bottom: 2.5rem;
 }
 
-.home .listing:after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 12px;
-  width: 100%;
-  background: #cb5a5e;
-  background: repeating-linear-gradient(-45deg, #cb5a5e, #cb5a5e 12px, transparent 10px, transparent 23px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-bottom: 0;
-}
-
 .home .listing.fade-in {
   opacity: 0;
   -webkit-transform: translateY(60px);
@@ -736,6 +735,19 @@ button a {
     width: 100%;
     display: block;
     text-align: center;
+    padding-top: 4rem;
+  }
+  .home .listing:not(:last-child):after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 12px;
+    width: 100%;
+    background: #9dddee;
+    background: repeating-linear-gradient(-45deg, #9dddee, #9dddee 12px, transparent 10px, transparent 23px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-bottom: 0;
   }
   .home .listing-art, .home .listing-text {
     width: 100%;
@@ -818,6 +830,8 @@ button a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
 }
 
 .skills-links-link {
@@ -827,7 +841,7 @@ button a {
   width: 75px;
   text-align: center;
   text-decoration: none;
-  color: #410585;
+  color: #9c07ff;
 }
 
 .skills-lists {
@@ -869,35 +883,23 @@ button a {
   padding: 2.5rem 0;
 }
 
+@media (max-width: 30em) {
+  .skills-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-links span {
+    width: 100%;
+  }
+}
+
 .project {
   margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.project button {
-  border-radius: 3px;
-  position: fixed;
-  bottom: 8rem;
-  left: 0;
-  width: 6rem;
-  height: 4rem;
-  font-size: 1.4rem;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-.project button a {
-  color: #000;
-  display: block;
-}
-
-.project button:hover {
-  background-color: rgba(110, 18, 200, 0.5);
-}
-
-.project button:hover a {
-  color: #fff;
 }
 
 .project-body {
@@ -943,6 +945,30 @@ button a {
   }
 }
 
+.project-body button, .project-body .footer-button {
+  border-radius: 3px;
+  position: fixed;
+  bottom: 22rem;
+  left: 0;
+  width: 6rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.project-body button a, .project-body .footer-button a {
+  color: #000;
+  display: block;
+}
+
+.project-body button:hover, .project-body .footer-button:hover {
+  background-color: rgba(110, 18, 200, 0.5);
+}
+
+.project-body button:hover a, .project-body .footer-button:hover a {
+  color: #fff;
+}
+
 .project-intro {
   width: 100%;
   display: -webkit-box;
@@ -978,5 +1004,20 @@ button a {
     -ms-flex-item-align: center;
         align-self: center;
   }
+}
+
+:root {
+  --color-bg: #fff;
+  --text-color: #222;
+}
+
+.wrapper {
+  background-color: var(--color-bg);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] {
+  --color-bg: #1f3740;
+  --text-color: #eca493;
 }
 /*# sourceMappingURL=main.css.map */

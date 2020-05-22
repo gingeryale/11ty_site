@@ -4,8 +4,8 @@
     grid-template-columns: 4rem 1fr 1fr 4rem;
     grid-gap: 2rem;
     font-size: 1.6rem;
-    border-top: 1px dashed $purple2;
-    padding-top: 4rem;
+    border-top: 2px dashed $blueFoam;
+    padding: $margin2 * 2;
     &-section-text {
         grid-row: 1;
         grid-column: 2 / 3;
@@ -18,15 +18,28 @@
         grid-column: 3 / 4;
         display: flex;
     }
+    .hidden {
+        opacity: 0.9;
+        display: none;
+    }
     &-button {
+        @extend button;
         width: 22rem;
         margin-top: 1rem;
+        text-align: center;
     }
+    @supports (-moz-appearance: none) {
+        &-button {
+            padding: 0.8rem;
+            margin-top: 1rem;
+        }
+    }
+
     @include responds(tab-port) {
         & {
             grid-template-rows: repeat(2, 100px);
             grid-template-columns: repeat(3, 1fr);
-            padding: 4rem 0;
+            padding: $margin2 0 4rem;
             &-section-text {
                 grid-row: 1;
                 grid-column: 2 / 3;
