@@ -17,6 +17,9 @@
         &-art {
             width: 50%;
         }
+        img {
+            clip-path: polygon(0 0, 88% 11%, 100% 100%, 0 88%, 13% 45%);
+        }
         &-text {
             width: 50%;
             justify-content: left;

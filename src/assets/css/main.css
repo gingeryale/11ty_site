@@ -756,6 +756,11 @@ button a, .footer-button a {
   width: 50%;
 }
 
+.home .listing img {
+  -webkit-clip-path: polygon(0 0, 88% 11%, 100% 100%, 0 88%, 13% 45%);
+          clip-path: polygon(0 0, 88% 11%, 100% 100%, 0 88%, 13% 45%);
+}
+
 .home .listing-text {
   width: 50%;
   -webkit-box-pack: left;
@@ -912,6 +917,26 @@ button a, .footer-button a {
 .skills-text {
   padding: 2.5rem 0;
   position: relative;
+  z-index: 1;
+}
+
+.skills-text:after, .skills-text:before {
+  content: "/";
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  font-size: 10rem;
+  color: #00c3ff;
+  z-index: -1;
+  font-family: "secular", serif;
+}
+
+.skills-text:before {
+  top: auto;
+  bottom: 0rem;
+  left: auto;
+  right: 50%;
+  color: #b500c5;
 }
 
 .skills-text [class^="skills-text-"] {
@@ -921,8 +946,7 @@ button a, .footer-button a {
 
 .skills-text-eng > h1 {
   font-family: "lot", "ar2", serif;
-  background: linear-gradient(45deg, #b500c5, #6e12c8 80%);
-  background: linear-gradient(45deg, #6e12c8 0%, #9c07ff 34%, #b500c5 100%);
+  background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
   -webkit-background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
