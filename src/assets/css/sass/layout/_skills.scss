@@ -49,14 +49,31 @@
     }
     &-text {
         padding: $margin2 0;
+        position: relative;
         [class^="skills-text-"] {
             padding: $margin2 0;
+            text-align: center;
+        }
+        &-eng > h1 {
+            font-family: "lot", "ar2", serif;
+            background: linear-gradient(45deg, $purple6, $purple2 80%);
+            @include gradient(45deg, $list2);
+            -webkit-background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &-heb > h1 {
+            font-family: "secular", "ar2", serif;
+            @include gradient(45deg, $list3);
+            -webkit-background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .heart {
             fill: red;
             position: relative;
-            top: 4px;
-            width: 18px;
+            top: 6px;
+            width: 34px;
         }
     }
     @include responds(phone) {

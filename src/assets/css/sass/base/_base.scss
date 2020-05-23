@@ -89,6 +89,15 @@ button {
     direction: rtl;
 
     button {
-        border: 2px solid $purple3;
+        border: 2px solid $blueFoam;
+        a {
+            color: $blueFoam;
+        }
+        &:hover {
+            background-color: $blueFoam;
+            a {
+                color: $white;
+            }
+        }
     }
 }

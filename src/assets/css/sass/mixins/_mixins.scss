@@ -18,7 +18,9 @@
 
 $list1: $purple1, $purple2, $purple3;
 
-$list2: $purple1 0%, $purple2 34%, $purple3 100%;
+$list2: $purple2 0%, $purple4 34%, $purple6 100%;
+
+$list3: $purple7 0%, $blueFoam 80%;
 
 @mixin gradient($direction, $list) {
     background: -webkit-linear-gradient($direction, $list);

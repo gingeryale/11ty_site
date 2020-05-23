@@ -29,3 +29,23 @@
     font-style: bold;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "secular";
+    src: url("./fonts/SecularOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "lot";
+    src: url("./fonts/Lot-Regular.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/Lot-Regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("./fonts/Lot-Regular.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("./fonts/Lot-Regular.woff") format("woff"),
+        /* Pretty Modern Browsers */ url("./fonts/Lot-Regular.ttf") format("truetype"); /* Safari, Android, iOS */
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

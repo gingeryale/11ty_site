@@ -382,6 +382,25 @@ template {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "secular";
+  src: url("./fonts/SecularOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "lot";
+  src: url("./fonts/Lot-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("./fonts/Lot-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Lot-Regular.woff2") format("woff2"), url("./fonts/Lot-Regular.woff") format("woff"), url("./fonts/Lot-Regular.ttf") format("truetype");
+  /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* GRADIENT LISTS
 ============================================= */
 *,
@@ -467,7 +486,19 @@ button a, .footer-button a {
 }
 
 [class*="heb"] button, [class*="heb"] .footer-button {
-  border: 2px solid #a402fa;
+  border: 2px solid #00c3ff;
+}
+
+[class*="heb"] button a, [class*="heb"] .footer-button a {
+  color: #00c3ff;
+}
+
+[class*="heb"] button:hover, [class*="heb"] .footer-button:hover {
+  background-color: #00c3ff;
+}
+
+[class*="heb"] button:hover a, [class*="heb"] .footer-button:hover a {
+  color: #fff;
 }
 
 .header {
@@ -619,7 +650,7 @@ button a, .footer-button a {
       grid-template-columns: 4rem 1fr 1fr 4rem;
   grid-gap: 2rem;
   font-size: 1.6rem;
-  border-top: 2px dashed #9dddee;
+  border-top: 2px dashed #00c3ff;
   padding: 5rem;
 }
 
@@ -744,10 +775,10 @@ button a, .footer-button a {
     content: "";
     position: absolute;
     display: block;
-    height: 12px;
+    height: 8px;
     width: 100%;
-    background: #9dddee;
-    background: repeating-linear-gradient(-45deg, #9dddee, #9dddee 12px, transparent 10px, transparent 23px);
+    background: #00c3ff;
+    background: repeating-linear-gradient(-45deg, #00c3ff, #00c3ff 12px, transparent 10px, transparent 23px);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-bottom: 0;
@@ -880,17 +911,36 @@ button a, .footer-button a {
 
 .skills-text {
   padding: 2.5rem 0;
+  position: relative;
 }
 
 .skills-text [class^="skills-text-"] {
   padding: 2.5rem 0;
+  text-align: center;
+}
+
+.skills-text-eng > h1 {
+  font-family: "lot", "ar2", serif;
+  background: linear-gradient(45deg, #b500c5, #6e12c8 80%);
+  background: linear-gradient(45deg, #6e12c8 0%, #9c07ff 34%, #b500c5 100%);
+  -webkit-background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-text-heb > h1 {
+  font-family: "secular", "ar2", serif;
+  background: linear-gradient(45deg, #4f44fd 0%, #00c3ff 80%);
+  -webkit-background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills-text .heart {
   fill: red;
   position: relative;
-  top: 4px;
-  width: 18px;
+  top: 6px;
+  width: 34px;
 }
 
 @media (max-width: 30em) {
@@ -913,9 +963,6 @@ button a, .footer-button a {
 }
 
 .project-body {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1px solid red;
-          order: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,8 +988,8 @@ button a, .footer-button a {
 }
 
 .project-body [class*="project-text-"] {
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #6e12c8;
+  border-bottom: 2px solid #4f44fd;
   padding: 2.5rem 0;
   width: 100%;
   max-width: 80rem;
@@ -963,11 +1010,11 @@ button a, .footer-button a {
   width: 6rem;
   height: 4rem;
   font-size: 1.4rem;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid #4f44fd;
 }
 
 .project-body button a, .project-body .footer-button a {
-  color: #000;
+  color: #6e12c8;
   display: block;
 }
 
@@ -1018,7 +1065,7 @@ button a, .footer-button a {
 
 :root {
   --color-bg: #fff;
-  --text-color: #222;
+  --text-color: #444;
 }
 
 .wrapper {
