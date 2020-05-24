@@ -1,0 +1,18 @@
+@import "sass/base/reset";
+@import "type";
+
+@import "sass/base/vars";
+
+@import "sass/mixins/mixins";
+
+@import "sass/base/base";
+
+@import "sass/components/header";
+@import "sass/components/svg";
+@import "sass/components/footer";
+
+@import "sass/layout/home";
+@import "sass/layout/skills";
+@import "sass/layout/project";
+
+@import "sass/components/theme.scss";

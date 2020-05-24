@@ -1,0 +1,14 @@
+:root {
+    --color-bg: #fff;
+    --text-color: #444;
+}
+
+.wrapper {
+    background-color: var(--color-bg);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] {
+    --color-bg: #1f3740;
+    --text-color: #eca493;
+}
