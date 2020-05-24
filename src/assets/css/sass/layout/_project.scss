@@ -32,7 +32,7 @@
         border-radius: 3px;
         position: fixed;
         bottom: 22rem;
-        left: 0;
+        left: -5px;
         width: 6rem;
         height: 4rem;
         font-size: 1.4rem;
@@ -42,7 +42,7 @@
             display: block;
         }
         &:hover {
-            background-color: rgba($purple2, 0.5);
+            background-color: $purple2;
             a {
                 color: $white;
             }

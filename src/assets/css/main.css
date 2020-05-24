@@ -770,6 +770,7 @@ button a, .footer-button a {
 
 .listing figcaption {
   background: white;
+  text-align: left;
 }
 
 .listing-text {
@@ -1055,7 +1056,7 @@ button a, .footer-button a {
   border-radius: 3px;
   position: fixed;
   bottom: 22rem;
-  left: 0;
+  left: -5px;
   width: 6rem;
   height: 4rem;
   font-size: 1.4rem;
@@ -1068,7 +1069,7 @@ button a, .footer-button a {
 }
 
 .project-body button:hover, .project-body .footer-button:hover {
-  background-color: rgba(110, 18, 200, 0.5);
+  background-color: #6e12c8;
 }
 
 .project-body button:hover a, .project-body .footer-button:hover a {
