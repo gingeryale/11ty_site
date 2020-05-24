@@ -31,7 +31,7 @@ const faders = document.querySelectorAll('.fade-in');
 const options = {
     root: null, // viewport
     threshold: 1, // how much is not the page
-    rootMargin: "0px 0px 100px 0px" // works like margin
+    rootMargin: "0px 0px 240px 0px" // works like margin
 };
 const appearOnScroll = new IntersectionObserver(function (entries, options) {
     entries.forEach(entry => {

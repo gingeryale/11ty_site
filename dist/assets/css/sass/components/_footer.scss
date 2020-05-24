@@ -34,11 +34,11 @@
         }
     }
 
-    @include responds(tab-port) {
+    @include responds(tab) {
         & {
             grid-template-rows: repeat(2, 100px);
             grid-template-columns: repeat(3, 1fr);
-            padding: $margin2 0 4rem;
+            padding: $margin2 0 $margin2 * 3;
             &-section-text {
                 grid-row: 1;
                 grid-column: 2 / 3;

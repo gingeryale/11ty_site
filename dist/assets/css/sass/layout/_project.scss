@@ -23,7 +23,7 @@
         max-width: 80rem;
         margin: $margin2 auto;
     }
-    @include responds(tab-port) {
+    @include responds(tab) {
         img {
             width: 100%;
         }
@@ -59,7 +59,7 @@
         width: 50%;
     }
 
-    @include responds(tab-port) {
+    @include responds(tab) {
         flex-direction: column;
         figure,
         ul {

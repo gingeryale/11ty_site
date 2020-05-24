@@ -12,25 +12,30 @@ html {
 
 @mixin responds($breakpoint) {
     @if $breakpoint == phone {
-        @media (max-width: 600px) {
+        @media (min-width: 18em) {
             @content;
-        } // 600px / 16
+        } // 288px / 16
     }
     @if $breakpoint == phone-land {
-        @media (max-height: 742px) and (max-width: 812px) {
+        @media (max-width: 50.75em) and (max-height: 20em) and (orientation: landscape) {
             @content;
-        } // 500px / 16
-        //640 / 16
+        } // 816px / 16
     }
-    @if $breakpoint == tab-port {
-        @media (max-width: 1024px) {
+    @if $breakpoint == tab {
+        @media (max-width: 50em) {
             @content;
-        } // 1024px / 16
+            // 672px
+        }
+    }
+    @if $breakpoint == desk-small {
+        @media (max-width: 62.5em) {
+            @content;
+        } // 1000px / 16
     }
     @if $breakpoint == pc {
-        @media (min-width: 1800px) {
+        @media (min-width: 62.5em + 1px) {
             @content;
-        } // +1800px
+        } // +1000px
     }
 }
 
