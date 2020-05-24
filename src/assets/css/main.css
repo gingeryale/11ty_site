@@ -727,7 +727,7 @@ button a, .footer-button a {
   }
 }
 
-.home .listing {
+.listing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -738,7 +738,7 @@ button a, .footer-button a {
   margin-bottom: 2.5rem;
 }
 
-.home .listing.fade-in {
+.listing.fade-in {
   opacity: 0;
   -webkit-transform: translateY(60px);
           transform: translateY(60px);
@@ -746,62 +746,87 @@ button a, .footer-button a {
   transition: all 0.3s ease-in;
 }
 
-.home .listing.fade-in.appear {
+.listing.fade-in.appear {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.home .listing-art {
+.listing-art {
   width: 50%;
+  background-image: radial-gradient(#00c3ff 35%, transparent 35%);
+  background-size: 6px 6px;
+  background-position: -50% 40%;
 }
 
-.home .listing img {
-  -webkit-clip-path: polygon(0 0, 88% 11%, 100% 100%, 0 88%, 13% 45%);
-          clip-path: polygon(0 0, 88% 11%, 100% 100%, 0 88%, 13% 45%);
+.listing img {
+  clip-path: polygon(27px 12px, 117.19% 25.97%, 79.16% 112.72%, 0px 88%, -5.14% 37.69%);
+  -webkit-clip-path: polygon(27px 12px, 117.19% 25.97%, 79.16% 112.72%, 0px 88%, -5.14% 37.69%);
+  border: 4px solid #00c3ff;
+  border-radius: 50%;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
-.home .listing-text {
+.listing figcaption {
+  background: white;
+}
+
+.listing-text {
   width: 50%;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
-  padding-left: 5px;
+  padding-left: 2.5rem;
+}
+
+.listing:nth-of-type(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.listing:nth-of-type(even) .listing-art {
+  text-align: right;
+  background-image: radial-gradient(#ea00ff 35%, transparent 35%);
+}
+
+.listing:nth-of-type(even) img {
+  border: 4px solid #ea00ff;
+  border-radius: 50%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  clip-path: polygon(20px 72px, 107.93% -2.9%, 104.95% 119.45%, 0px 88%, -17.2% 33.48%);
+  -webkit-clip-path: polygon(20px 72px, 107.93% -2.9%, 104.95% 119.45%, 0px 88%, -17.2% 33.48%);
+}
+
+.listing:nth-of-type(even) .listing-text {
+  padding-left: 0;
+  padding-right: 2.5rem;
 }
 
 @media (max-width: 64em) {
-  .home .listing {
+  .listing {
     width: 100%;
     display: block;
     text-align: center;
     padding-top: 4rem;
   }
-  .home .listing:not(:last-child):after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 8px;
-    width: 100%;
-    background: #00c3ff;
-    background: repeating-linear-gradient(-45deg, #00c3ff, #00c3ff 12px, transparent 10px, transparent 23px);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-bottom: 0;
-  }
-  .home .listing-art, .home .listing-text {
+  .listing-art, .listing-text {
     width: 100%;
   }
-  .home [class^="listing-text-"] {
+  [class^="listing-text-"] {
     width: 80%;
     margin: 2.5rem auto;
   }
-  .home img {
-    width: 40%;
+  img {
+    width: 44%;
   }
 }
 
 @media (max-height: 31.25em) {
-  .home .listing.fade-in {
+  .listing.fade-in {
     opacity: 1;
   }
 }
@@ -928,7 +953,7 @@ button a, .footer-button a {
   font-size: 10rem;
   color: #00c3ff;
   z-index: -1;
-  font-family: "secular", serif;
+  font-family: "secular", sans-serif;
 }
 
 .skills-text:before {
@@ -936,7 +961,7 @@ button a, .footer-button a {
   bottom: 0rem;
   left: auto;
   right: 50%;
-  color: #b500c5;
+  color: #ea00ff;
 }
 
 .skills-text [class^="skills-text-"] {
@@ -945,7 +970,7 @@ button a, .footer-button a {
 }
 
 .skills-text-eng > h1 {
-  font-family: "lot", "ar2", serif;
+  font-family: "lot", "ar2", sans-serif;
   background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
   -webkit-background-clip: border-box;
   -webkit-background-clip: text;
@@ -961,7 +986,7 @@ button a, .footer-button a {
 }
 
 .skills-text .heart {
-  fill: red;
+  fill: #6e12c8;
   position: relative;
   top: 6px;
   width: 34px;

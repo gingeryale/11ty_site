@@ -60,21 +60,21 @@
             font-size: 10rem;
             color: $blueFoam;
             z-index: -1;
-            font-family: "secular", serif;
+            font-family: "secular", sans-serif;
         }
         &:before {
             top: auto;
             bottom: 0rem;
             left: auto;
             right: 50%;
-            color: $purple6;
+            color: $purple8;
         }
         [class^="skills-text-"] {
             padding: $margin2 0;
             text-align: center;
         }
         &-eng > h1 {
-            font-family: "lot", "ar2", serif;
+            font-family: "lot", "ar2", sans-serif;
             @include gradient(45deg, $list1);
             -webkit-background-clip: border-box;
             -webkit-background-clip: text;
@@ -88,7 +88,7 @@
             -webkit-text-fill-color: transparent;
         }
         .heart {
-            fill: red;
+            fill: $purple2;
             position: relative;
             top: 6px;
             width: 34px;
