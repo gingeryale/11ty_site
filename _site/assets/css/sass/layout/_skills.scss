@@ -95,6 +95,9 @@
         }
     }
     @include responds(phone) {
+        h3 {
+            text-align: center;
+        }
         &-links {
             flex-direction: column;
             span {
