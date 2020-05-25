@@ -94,10 +94,12 @@
             width: 34px;
         }
     }
-    @include responds(phone) {
+    @include responds(tab) {
         h3 {
             text-align: center;
         }
+    }
+    @include responds(phone) {
         &-links {
             flex-direction: column;
             span {

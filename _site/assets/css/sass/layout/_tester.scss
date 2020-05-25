@@ -1,0 +1,15 @@
+.tester {
+    height: 100rem;
+    width: 100%;
+
+    .base {
+        clip-path: polygon(78% 86%, 100% 64%, 100% 100%, 0 99%, 0 74%);
+        height: 100rem;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        background-image: radial-gradient($blueFoam 35%, transparent 35%);
+        background-size: 6px 6px;
+    }
+}

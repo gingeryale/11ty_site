@@ -6,6 +6,7 @@
     font-size: 1.6rem;
     border-top: 2px dashed $blueFoam;
     padding: $margin2 * 2;
+    margin-top: $margin2;
     &-section-text {
         grid-row: 1;
         grid-column: 2 / 3;
@@ -26,6 +27,7 @@
         width: 22rem;
         margin-top: 1rem;
         text-align: center;
+        border-color: $purple4;
     }
     @supports (-moz-appearance: none) {
         &-button {

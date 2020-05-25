@@ -423,13 +423,14 @@ body {
 }
 
 h3 {
-  font-family: "ar4", serif;
+  font-family: "ar4", sans-serif;
   letter-spacing: 1px;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 h4 {
-  font-family: "ar3", serif;
+  font-family: "ar3", sans-serif;
 }
 
 .wrapper {
@@ -456,29 +457,37 @@ h4 {
 button, .footer-button {
   width: 10rem;
   height: 4rem;
-  border: 2px solid #6e12c8;
+  border: 2px solid #9c07ff;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   color: #6e12c8;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   line-height: 2.4;
   margin-top: 2.5rem;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
 }
 
 button:hover, .footer-button:hover {
   background-color: #6e12c8;
   color: #fff;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 button:hover a, .footer-button:hover a {
   color: #fff;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 button a, .footer-button a {
   text-decoration: none;
   display: block;
-  color: #6e12c8;
+  color: #9c07ff;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
 }
 
 .hidden {
@@ -491,19 +500,27 @@ button a, .footer-button a {
 }
 
 [class*="heb"] button, [class*="heb"] .footer-button {
-  border: 2px solid #00c3ff;
+  border: 2px solid #18ccdf;
+  -webkit-transform: skewX(20deg);
+          transform: skewX(20deg);
 }
 
 [class*="heb"] button a, [class*="heb"] .footer-button a {
-  color: #00c3ff;
+  color: #18ccdf;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
 }
 
 [class*="heb"] button:hover, [class*="heb"] .footer-button:hover {
   background-color: #00c3ff;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 [class*="heb"] button:hover a, [class*="heb"] .footer-button:hover a {
   color: #fff;
+  -webkit-transform: skewX(0deg);
+          transform: skewX(0deg);
 }
 
 .header {
@@ -622,7 +639,7 @@ button a, .footer-button a {
   }
 }
 
-@media (min-width: 18em) {
+@media (max-width: 46em) {
   .header-svg {
     width: 96%;
   }
@@ -665,6 +682,7 @@ button a, .footer-button a {
   font-size: 1.6rem;
   border-top: 2px dashed #00c3ff;
   padding: 5rem;
+  margin-top: 2.5rem;
 }
 
 .footer-section-text {
@@ -702,6 +720,7 @@ button a, .footer-button a {
   width: 22rem;
   margin-top: 1rem;
   text-align: center;
+  border-color: #9c07ff;
 }
 
 @supports (-moz-appearance: none) {
@@ -748,7 +767,7 @@ button a, .footer-button a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2.5rem;
+  min-height: 52rem;
 }
 
 .listing.fade-in {
@@ -783,6 +802,8 @@ button a, .footer-button a {
 .listing figcaption {
   background: white;
   text-align: left;
+  line-height: 2.8rem;
+  margin-top: 0.8rem;
 }
 
 .listing-text {
@@ -802,16 +823,16 @@ button a, .footer-button a {
 
 .listing:nth-of-type(even) .listing-art {
   text-align: right;
-  background-image: radial-gradient(#ea00ff 35%, transparent 35%);
+  background-image: radial-gradient(#9c07ff 35%, transparent 35%);
 }
 
 .listing:nth-of-type(even) img {
-  border: 4px solid #ea00ff;
+  border: 4px solid #e6119c;
   border-radius: 50%;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  clip-path: polygon(-42px 50px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 36.84%);
-  -webkit-clip-path: polygon(-42px 50px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 36.84%);
+  clip-path: polygon(-32px 69px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 44.69%);
+  -webkit-clip-path: polygon(-32px 69px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 44.69%);
 }
 
 .listing:nth-of-type(even) .listing-text {
@@ -840,6 +861,14 @@ button a, .footer-button a {
   }
   img {
     width: 42%;
+  }
+}
+
+@media (max-width: 46em) {
+  .listing.fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -973,7 +1002,7 @@ button a, .footer-button a {
   bottom: 0rem;
   left: auto;
   right: 50%;
-  color: #ea00ff;
+  color: #e6119c;
 }
 
 .skills-text [class^="skills-text-"] {
@@ -1004,10 +1033,13 @@ button a, .footer-button a {
   width: 34px;
 }
 
-@media (min-width: 18em) {
+@media (max-width: 50em) {
   .skills h3 {
     text-align: center;
   }
+}
+
+@media (max-width: 46em) {
   .skills-links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1070,7 +1102,7 @@ button a, .footer-button a {
   border-radius: 3px;
   position: fixed;
   bottom: 22rem;
-  left: -5px;
+  left: -8px;
   width: 6rem;
   height: 4rem;
   font-size: 1.4rem;
@@ -1125,6 +1157,23 @@ button a, .footer-button a {
     -ms-flex-item-align: center;
         align-self: center;
   }
+}
+
+.tester {
+  height: 100rem;
+  width: 100%;
+}
+
+.tester .base {
+  -webkit-clip-path: polygon(78% 86%, 100% 64%, 100% 100%, 0 99%, 0 74%);
+          clip-path: polygon(78% 86%, 100% 64%, 100% 100%, 0 99%, 0 74%);
+  height: 100rem;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-image: radial-gradient(#00c3ff 35%, transparent 35%);
+  background-size: 6px 6px;
 }
 
 :root {

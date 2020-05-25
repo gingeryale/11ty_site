@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: $margin2;
+    min-height: 52rem;
     &.fade-in {
         opacity: 0;
         transform: translateY(30px);
@@ -27,6 +27,8 @@
     figcaption {
         background: white;
         text-align: left;
+        line-height: 2.8rem;
+        margin-top: 0.8rem;
     }
     &-text {
         width: 50%;
@@ -37,14 +39,14 @@
         flex-direction: row-reverse;
         .listing-art {
             text-align: right;
-            background-image: radial-gradient($purple8 35%, transparent 35%);
+            background-image: radial-gradient($purple4 35%, transparent 35%);
         }
         img {
             border: 4px solid $purple8;
             border-radius: 50%;
             transform: rotate(-10deg);
-            clip-path: polygon(-42px 50px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 36.84%);
-            -webkit-clip-path: polygon(-42px 50px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 36.84%);
+            clip-path: polygon(-32px 69px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 44.69%);
+            -webkit-clip-path: polygon(-32px 69px, 108.19% 0.73%, 104.95% 119.45%, 0px 88%, -25.14% 44.69%);
         }
         .listing-text {
             padding-left: 0;
@@ -81,10 +83,10 @@
 
 @include responds(phone) {
     .listing {
-        //     &.fade-in {
-        //         opacity: 1;
-        //         transform: translateY(0);
-        //     }
+        &.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 

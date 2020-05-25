@@ -9,20 +9,16 @@
 	</head>
 	<body>
 		<div class="wrapper {{title}}">
-			{% include "./layout/header.njk" %}
 
-			<main>
-				{% block content %}
-					{{ content | safe}}
-				{% endblock content %}
+			{% block content %}
+				{{ content | safe}}
+			{% endblock content %}
 
-				{% block home %}{% endblock home %}
+			{% block home %}{% endblock home %}
 
-				{% block postContent %}{% endblock postContent %}
-
-			</main>
-			{% include "./layout/footer.njk" %}
+			<footer>
+				<span>&copy; Copyright 2020, gingeryale</span>
+			</footer>
 		</div>
-		<script src="../assets/js/scripts.js"></script>
 	</body>
 </html>

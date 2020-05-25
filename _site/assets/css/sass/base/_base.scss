@@ -12,9 +12,9 @@ html {
 
 @mixin responds($breakpoint) {
     @if $breakpoint == phone {
-        @media (min-width: 18em) {
+        @media (max-width: 46em) {
             @content;
-        } // 288px / 16
+        } // 736px / 16
     }
     @if $breakpoint == phone-land {
         @media (max-width: 50.75em) and (max-height: 20em) and (orientation: landscape) {
@@ -44,12 +44,13 @@ body {
     color: rgba($black, 0.8);
 }
 h3 {
-    font-family: "ar4", serif;
+    font-family: "ar4", sans-serif;
     letter-spacing: 1px;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 h4 {
-    font-family: "ar3", serif;
+    font-family: "ar3", sans-serif;
 }
 .wrapper {
     display: flex;
@@ -70,26 +71,31 @@ h4 {
 button {
     width: 10rem;
     height: 4rem;
-    border: 2px solid $purple2;
+    border: 2px solid $purple4;
     background-color: $white;
-    border-radius: 5px;
+    border-radius: $margin2 / 5;
     color: $purple2;
     transition: all 0.2s ease-in;
     line-height: 2.4;
     margin-top: $margin2;
+    transform: skewX(-20deg);
     &:hover {
         background-color: $purple2;
         color: $white;
+        transform: skewX(0deg);
         a {
             color: $white;
+            transform: skewX(0deg);
         }
     }
     a {
         text-decoration: none;
         display: block;
-        color: $purple2;
+        color: $purple4;
+        transform: skewX(20deg);
     }
 }
+
 .hidden {
     display: none;
 }
@@ -99,14 +105,18 @@ button {
     direction: rtl;
 
     button {
-        border: 2px solid $blueFoam;
+        border: 2px solid $blueLight;
+        transform: skewX(20deg);
         a {
-            color: $blueFoam;
+            color: $blueLight;
+            transform: skewX(-20deg);
         }
         &:hover {
             background-color: $blueFoam;
+            transform: skewX(0deg);
             a {
                 color: $white;
+                transform: skewX(0deg);
             }
         }
     }
