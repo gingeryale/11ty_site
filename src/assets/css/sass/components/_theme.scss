@@ -1,14 +1,19 @@
 :root {
     --color-bg: #fff;
     --text-color: #444;
+    --figCaption-clr: #fff;
 }
 
 .wrapper {
     background-color: var(--color-bg);
     color: var(--text-color);
+    figcaption {
+        background-color: var(--figCaption-clr);
+    }
 }
 
 [data-theme="dark"] {
     --color-bg: #1f3740;
     --text-color: #eca493;
+    --figCaption-clr: #1f3740;
 }
