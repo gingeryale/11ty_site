@@ -29,6 +29,7 @@
         }
     }
     button {
+        transform: none;
         border-radius: 3px;
         position: fixed;
         bottom: 22rem;
@@ -38,6 +39,7 @@
         font-size: 1.4rem;
         border: 2px solid $purple7;
         a {
+            transform: none;
             color: $purple2;
             display: block;
         }

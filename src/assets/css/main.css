@@ -1111,6 +1111,8 @@ figcaption {
 }
 
 .project-body button, .project-body .footer-button {
+  -webkit-transform: none;
+          transform: none;
   border-radius: 3px;
   position: fixed;
   bottom: 22rem;
@@ -1122,6 +1124,8 @@ figcaption {
 }
 
 .project-body button a, .project-body .footer-button a {
+  -webkit-transform: none;
+          transform: none;
   color: #6e12c8;
   display: block;
 }
