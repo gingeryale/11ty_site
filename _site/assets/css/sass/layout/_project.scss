@@ -13,7 +13,7 @@
         line-height: 2;
     }
     figure {
-        margin: $margin2 0;
+        margin: $margin2 $margin2 $margin2 0;
     }
     [class*="project-text-"] {
         border-top: 2px solid $purple2;
@@ -59,7 +59,7 @@
         width: 50%;
     }
 
-    @include responds(tab) {
+    @include responds(desk-small) {
         flex-direction: column;
         figure,
         ul {

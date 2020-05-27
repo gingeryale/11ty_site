@@ -28,12 +28,12 @@ html {
         }
     }
     @if $breakpoint == desk-small {
-        @media (max-width: 62.5em) {
+        @media (max-width: 64em) {
             @content;
         } // 1000px / 16
     }
     @if $breakpoint == pc {
-        @media (min-width: 62.5em + 1px) {
+        @media (min-width: 64em + 1px) {
             @content;
         } // +1000px
     }
@@ -100,6 +100,16 @@ button {
     display: none;
 }
 
+figcaption {
+    text-align: left;
+    line-height: 2.8rem;
+    margin-top: 0.8rem;
+
+    @include responds(tab) {
+        text-align: center;
+    }
+}
+
 /* LTR */
 [class*="heb"] {
     direction: rtl;
@@ -119,5 +129,11 @@ button {
                 transform: skewX(0deg);
             }
         }
+    }
+}
+
+@include responds(phone) {
+    h3 {
+        font-size: 1.8rem;
     }
 }

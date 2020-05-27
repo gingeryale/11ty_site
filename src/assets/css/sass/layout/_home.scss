@@ -24,17 +24,14 @@
         border-radius: 50%;
         transform: rotate(10deg);
     }
-    figcaption {
-        text-align: left;
-        line-height: 2.8rem;
-        margin-top: 0.8rem;
-    }
     &-text {
         width: 50%;
-        justify-content: left;
         padding-left: $margin2;
+        &-eng {
+            margin-bottom: $margin2;
+        }
     }
-    &:nth-of-type(even) {
+    &:nth-of-type(2n) {
         flex-direction: row-reverse;
         .listing-art {
             text-align: right;
@@ -52,39 +49,35 @@
             padding-right: $margin2;
         }
     }
-}
 
-@include responds(tab) {
-    .listing {
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding-top: 4rem;
-        padding: 0;
-        &-art,
-        &-text {
+    @include responds(tab) {
+        &,
+        &:nth-of-type(2n) {
             width: 100%;
+            display: block;
+            padding-top: 4rem 0;
+            .listing-art,
+            .listing-text {
+                width: 100%;
+                padding: 0;
+                text-align: center;
+            }
         }
-        &:nth-of-type(even) .listing-art {
-            text-align: center;
-            padding: 0;
+        [class^="listing-text-"] {
+            width: 88%;
+            margin: $margin2 auto;
         }
-    }
-    [class^="listing-text-"] {
-        width: 80%;
-        margin: $margin2 auto;
+        img {
+            width: 42%;
+        }
     }
 
-    img {
-        width: 42%;
-    }
-}
-
-@include responds(phone) {
-    .listing {
-        &.fade-in {
-            opacity: 1;
-            transform: translateY(0);
+    @include responds(phone) {
+        & {
+            &.fade-in {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 }

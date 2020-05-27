@@ -494,6 +494,18 @@ button a, .footer-button a {
   display: none;
 }
 
+figcaption {
+  text-align: left;
+  line-height: 2.8rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 50em) {
+  figcaption {
+    text-align: center;
+  }
+}
+
 /* LTR */
 [class*="heb"] {
   direction: rtl;
@@ -521,6 +533,12 @@ button a, .footer-button a {
   color: #fff;
   -webkit-transform: skewX(0deg);
           transform: skewX(0deg);
+}
+
+@media (max-width: 46em) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 .header {
@@ -616,7 +634,7 @@ button a, .footer-button a {
   font-size: 2rem;
 }
 
-@media (max-width: 62.5em) {
+@media (max-width: 64em) {
   .header {
     height: 32rem;
   }
@@ -624,7 +642,7 @@ button a, .footer-button a {
     opacity: 0.5;
     position: relative;
     top: -8rem;
-    left: 10rem;
+    left: 0;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
@@ -801,33 +819,28 @@ button a, .footer-button a {
           transform: rotate(10deg);
 }
 
-.listing figcaption {
-  text-align: left;
-  line-height: 2.8rem;
-  margin-top: 0.8rem;
-}
-
 .listing-text {
   width: 50%;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
   padding-left: 2.5rem;
 }
 
-.listing:nth-of-type(even) {
+.listing-text-eng {
+  margin-bottom: 2.5rem;
+}
+
+.listing:nth-of-type(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
 
-.listing:nth-of-type(even) .listing-art {
+.listing:nth-of-type(2n) .listing-art {
   text-align: right;
   background-image: radial-gradient(#9c07ff 35%, transparent 35%);
 }
 
-.listing:nth-of-type(even) img {
+.listing:nth-of-type(2n) img {
   border: 4px solid #e6119c;
   border-radius: 50%;
   -webkit-transform: rotate(-10deg);
@@ -836,31 +849,29 @@ button a, .footer-button a {
   -webkit-clip-path: polygon(-27px 43px, 109.31% 5.21%, 104.95% 119.45%, 0px 88%, -9.5% 57.38%);
 }
 
-.listing:nth-of-type(even) .listing-text {
+.listing:nth-of-type(2n) .listing-text {
   padding-left: 0;
   padding-right: 2.5rem;
 }
 
 @media (max-width: 50em) {
-  .listing {
+  .listing, .listing:nth-of-type(2n) {
     width: 100%;
     display: block;
-    text-align: center;
-    padding-top: 4rem;
-    padding: 0;
+    padding-top: 4rem 0;
   }
-  .listing-art, .listing-text {
+  .listing .listing-art,
+  .listing .listing-text, .listing:nth-of-type(2n) .listing-art,
+  .listing:nth-of-type(2n) .listing-text {
     width: 100%;
-  }
-  .listing:nth-of-type(even) .listing-art {
-    text-align: center;
     padding: 0;
+    text-align: center;
   }
-  [class^="listing-text-"] {
-    width: 80%;
+  .listing [class^="listing-text-"] {
+    width: 88%;
     margin: 2.5rem auto;
   }
-  img {
+  .listing img {
     width: 42%;
   }
 }
@@ -1081,7 +1092,7 @@ button a, .footer-button a {
 }
 
 .project-body figure {
-  margin: 2.5rem 0;
+  margin: 2.5rem 2.5rem 2.5rem 0;
 }
 
 .project-body [class*="project-text-"] {
@@ -1138,7 +1149,7 @@ button a, .footer-button a {
   width: 50%;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 64em) {
   .project-intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
