@@ -28,9 +28,9 @@ html {
         }
     }
     @if $breakpoint == desk-small {
-        @media (max-width: 64em) {
+        @media (max-width: 63.5em) {
             @content;
-        } // 1000px / 16
+        } // 1017px / 16
     }
     @if $breakpoint == pc {
         @media (min-width: 64em + 1px) {
@@ -46,8 +46,9 @@ body {
 h3 {
     font-family: "ar4", sans-serif;
     letter-spacing: 1px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
+    margin-bottom: 0.8rem;
 }
 h4 {
     font-family: "ar3", sans-serif;

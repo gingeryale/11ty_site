@@ -1,0 +1,15 @@
+.words {
+    margin: 0 auto;
+    justify-content: center;
+    .project-intro {
+        display: block;
+    }
+    [class*="project-text-"]:nth-of-type(2n) {
+        border: none;
+        padding: 0;
+        margin-top: 0;
+    }
+    ul {
+        margin-top: 0;
+    }
+}

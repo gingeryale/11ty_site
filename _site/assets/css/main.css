@@ -425,8 +425,9 @@ body {
 h3 {
   font-family: "ar4", sans-serif;
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
+  margin-bottom: 0.8rem;
 }
 
 h4 {
@@ -634,7 +635,7 @@ figcaption {
   font-size: 2rem;
 }
 
-@media (max-width: 64em) {
+@media (max-width: 63.5em) {
   .header {
     height: 32rem;
   }
@@ -1153,7 +1154,7 @@ figcaption {
   width: 50%;
 }
 
-@media (max-width: 64em) {
+@media (max-width: 63.5em) {
   .project-intro {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1173,6 +1174,27 @@ figcaption {
     -ms-flex-item-align: center;
         align-self: center;
   }
+}
+
+.words {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.words .project-intro {
+  display: block;
+}
+
+.words [class*="project-text-"]:nth-of-type(2n) {
+  border: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.words ul {
+  margin-top: 0;
 }
 
 .tester {
