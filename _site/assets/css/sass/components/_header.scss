@@ -43,17 +43,41 @@
 			justify-content: center;
 			align-items: center;
 		}
+		a {
+			color: $white;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 1.6rem;
+			transition: all 0.2s ease-in-out;
+			position: relative;
+			padding: 0.8rem;
+			font-weight: bold;
+			letter-spacing: 1px;
+			&:before {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 0%;
+				background-color: $purple8;
+				transition: all 0.2s ease-in-out;
+				z-index: -1;
+			}
+			&:hover {
+				color: $purple2;
+				transform: skewX(0deg);
+				&:before {
+					height: 100%;
+				}
+			}
+		}
 		li {
 			display: flex;
 			align-items: center;
 			list-style-type: none;
-			margin-right: 2rem;
+			margin-right: $margin2;
 			display: inline;
-		}
-		a {
-			color: $white;
-			text-decoration: none;
-			font-size: 2rem;
 		}
 	}
 

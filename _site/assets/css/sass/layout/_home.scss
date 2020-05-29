@@ -72,7 +72,8 @@
     }
 
     @include responds(phone) {
-        & {
+        &,
+        &:nth-of-type(2n) {
             &.fade-in {
                 opacity: 1;
                 transform: translateY(0);
@@ -80,7 +81,7 @@
         }
         img {
             border-width: 2px;
-            background-color: green;
+            background-color: $bluebg;
         }
     }
 }

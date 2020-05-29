@@ -60,6 +60,10 @@
     ul {
         width: 50%;
     }
+    img {
+        aspect-ratio: 4 / 3;
+        width: clamp(20rem, 100%, 40rem);
+    }
 
     @include responds(desk-small) {
         flex-direction: column;

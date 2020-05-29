@@ -80,13 +80,26 @@ button {
     line-height: 2.4;
     margin-top: $margin2;
     transform: skewX(-20deg);
-    &:hover {
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0%;
         background-color: $purple2;
+        transition: all 0.2s;
+        z-index: -1;
+    }
+    &:hover {
         color: $white;
         transform: skewX(0deg);
         a {
             color: $white;
             transform: skewX(0deg);
+        }
+        &:before {
+            height: 100%;
         }
     }
     a {
@@ -118,16 +131,21 @@ figcaption {
     button {
         border: 2px solid $blueLight;
         transform: skewX(20deg);
+        &:before {
+            background-color: $blueFoam;
+        }
         a {
             color: $blueLight;
             transform: skewX(-20deg);
         }
         &:hover {
-            background-color: $blueFoam;
             transform: skewX(0deg);
             a {
                 color: $white;
                 transform: skewX(0deg);
+            }
+            &:before {
+                height: 100%;
             }
         }
     }

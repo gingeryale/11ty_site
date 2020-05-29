@@ -29,6 +29,9 @@
         margin-top: 1rem;
         text-align: center;
         border-color: $purple4;
+        &:hover {
+            background-color: $purple4;
+        }
     }
     @supports (-moz-appearance: none) {
         &-button {
