@@ -1,29 +1,3 @@
-const themeButton = document.querySelector('.footer-button');
-const localStorage = window.localStorage;
-if (localStorage.getItem("checkboxTheme")) {
-    setNight();
-}
-
-document.querySelector('#themeSwitch').addEventListener('click', function (e) {
-    (e.target.checked) ? setNight() : setDay();
-});
-
-function setNight() {
-    document.body.setAttribute('data-theme', 'dark');
-    themeButton.innerHTML = "Switch to Day Mode";
-    localStorage.setItem("checkboxTheme", "dark");
-}
-
-function setDay() {
-    document.body.removeAttribute('data-theme');
-    themeButton.innerHTML = "Switch to Night Mode";
-    localStorage.removeItem("checkboxTheme");
-}
-
-
-
-
-
 const list = document.querySelector('.listing');
 const faders = document.querySelectorAll('.fade-in');
 
@@ -49,4 +23,31 @@ faders.forEach(fade => {
 });
 
 appearOnScroll.observe(list);
+
+
+
+
+
+const themeButton = document.querySelector('.footer-button');
+const localStorage = window.localStorage;
+if (localStorage.getItem("checkboxTheme")) {
+    setNight();
+}
+
+document.querySelector('#themeSwitch').addEventListener('click', function (e) {
+    (e.target.checked) ? setNight() : setDay();
+});
+
+function setNight() {
+    document.body.setAttribute('data-theme', 'dark');
+    themeButton.innerHTML = "Switch to Day Mode";
+    localStorage.setItem("checkboxTheme", "dark");
+}
+
+function setDay() {
+    document.body.removeAttribute('data-theme');
+    themeButton.innerHTML = "Switch to Night Mode";
+    localStorage.removeItem("checkboxTheme");
+}
+
 
