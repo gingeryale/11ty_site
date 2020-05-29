@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: inherit;
 }
+
 html {
     height: 100%;
     font-size: 62.5%; // 1rem = 10px/16px = 62.5
@@ -69,6 +70,11 @@ h4 {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 button {
     width: 10rem;
     height: 4rem;
@@ -103,9 +109,7 @@ button {
         }
     }
     a {
-        text-decoration: none;
         display: block;
-        color: $purple4;
         transform: skewX(20deg);
     }
 }

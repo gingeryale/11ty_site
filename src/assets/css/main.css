@@ -455,6 +455,11 @@ h4 {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button, .footer-button {
   width: 10rem;
   height: 4rem;
@@ -500,9 +505,7 @@ button:hover:before, .footer-button:hover:before {
 }
 
 button a, .footer-button a {
-  text-decoration: none;
   display: block;
-  color: #9c07ff;
   -webkit-transform: skewX(20deg);
           transform: skewX(20deg);
 }
