@@ -1284,6 +1284,16 @@ figcaption {
   background-size: 6px 6px;
 }
 
+.err .content {
+  min-height: 50vh;
+  text-align: center;
+}
+
+.err a {
+  color: inherit;
+  text-decoration: none;
+}
+
 :root {
   --color-bg: #fff;
   --text-color: #444;

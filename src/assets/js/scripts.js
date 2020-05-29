@@ -1,4 +1,4 @@
-const list = document.querySelector('.listing');
+const article = document.querySelector('article');
 const faders = document.querySelectorAll('.fade-in');
 
 
@@ -22,7 +22,8 @@ faders.forEach(fade => {
     appearOnScroll.observe(fade);
 });
 
-appearOnScroll.observe(list);
+appearOnScroll.observe(article);
+
 
 
 
