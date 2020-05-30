@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>404 Not Found</title>
-		<meta name="Description" content="Online protfolio for gingeryale works">
+		<title>MedicalStartup</title>
+		<meta name="Description" content="MedicalStartup">
 		<link rel="stylesheet" href="../assets/css/main.css" type="text/css"/>
 
 	</head>
 	<body>
-		<div  class="wrapper err">
+		<div  class="wrapper project">
 			<header class="header">
     <nav>
         <ul>
@@ -569,12 +569,59 @@
     <div class="content">
         
 
-<h1>404 Not Found</h1>
-<p>Here's a link to the
-    <a href="/">home page</a>
-</p>
 
-<img src="/assets/img/listTest.png" alt="me"/>
+<article class="project-body">
+    <section class="project-intro">
+        <figure>
+            <img src="/assets/img/p1.jpg" alt="casino site" loading="lazy"/>
+            <figcaption>Minimal viable product for startup</figcaption>
+        </figure>
+        <ul>
+            <li>Developer of HTML and CSS for existing product and MVP interfaces</li>
+            <li>Created wireframes, mockups and user flows</li>
+            <li>Used Photoshop, Illustartor and InDesign</li>
+            <li>Used InVision and Marvel UX apps for prototypes and user flow</li>
+            <li>Worked along side a small team of data analysts, backend developers and remote programmers</li>
+            <li>Wrote and published product documentation</li>
+
+
+        </ul>
+    </section>
+
+    <section class="project-text-eng">
+        <h3>In-House UX/UI designer and interface developer for small NYC medical startup</h3>
+        <p>In my time at the medical startup I got to enhance their existing B2B products and work on MVP for future products. I used a combination of handrolled CSS and the Bootstap framework to interate quickly through MVP cycles. Progress would be presented to management through such apps as InVision and Marvel.
+        </p>
+    </section>
+
+    <section class="project-art">
+        <figure>
+            <img src="/assets/img/p1b.jpg" alt="project image" loading="lazy"/>
+            <figcaption class="heb">החייל מהסטילים
+            </figcaption>
+        </figure>
+    </section>
+    <section class="project-text-heb">
+
+        <h3>החייל מהסטילים שהפך לשף של קרם ברולה</h3>
+        <p>שני בחורים בשנות ה-20 המוקדמות לחייהם מפעילים מיזם מחתרתי של קינוחי קרם ברולה בתוספות שונות, מתוך דירת חדר
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ביפו. לא מאמינים? גם אנחנו לא האמנו, עד שיצאנו לטעום וראינו בדיוק איך זה קורה. צפו</p>
+    </section>
+    <section class="projet-text-heb">
+        <ul>
+            <li>תקופת הקורונה הביאה איתה לא מעט מיזמי אוכל מעניינים</li>
+            <li>סתיו איתם הוא חייל משוחרר מצפון הארץ ששירת בסטילים.</li>
+            <li>שם, בבטן הספינה, היה מטבח קטן שבו החיילים היו מפהקים עצמם כל פעם במשהו אחר, בשביל לשמור על המוראל.
+            </li>
+            <li>כשהשתחרר מהצבא הוא עבד במסעדה, אבל אז הגיעה הקורונה והוא יצא לחל"ת.</li>
+            <li>קרם ברולה זה קינוח שבדרך כלל לא נותנים לו את הכבוד המגיע לו. ומי לא אוהב קינוח</li>
+            <li>סתיו איתם הוא חייל משוחרר מצפון הארץ ששירת בסטילים.</li>
+        </ul>
+    </section>
+    <button aria-label="link to project">
+        <a href="/">back</a>
+    </button>
+</article>
     </div>
 
 

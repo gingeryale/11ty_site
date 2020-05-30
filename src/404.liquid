@@ -6,8 +6,10 @@ permalink: "404.html"
 listTEST: "/assets/img/listTest.png"
 ---
 {% block home %}
+
 <h1>{{ title }}</h1>
 <p>Here's a link to the
     <a href="{{ "/" | url }}">home page</a>
-</p>{% endblock home %}
-<img src="listTEST" alt="me" />
+</p>
+
+<img src="{{ listTEST }}" alt="me"/>{% endblock home %}

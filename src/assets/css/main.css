@@ -401,6 +401,14 @@ template {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "dots";
+  src: url("./fonts/scoreboard.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* GRADIENT LISTS
 ============================================= */
 *,
@@ -654,6 +662,8 @@ figcaption {
   padding: 0.8rem;
   font-weight: bold;
   letter-spacing: 1px;
+  -webkit-box-shadow: inset 0 -6px 0 #22d2ff;
+          box-shadow: inset 0 -6px 0 #22d2ff;
 }
 
 .header nav a:before {
@@ -673,6 +683,8 @@ figcaption {
   color: #6e12c8;
   -webkit-transform: skewX(0deg);
           transform: skewX(0deg);
+  -webkit-box-shadow: inset 0 0px 0 #22d2ff;
+          box-shadow: inset 0 0px 0 #22d2ff;
 }
 
 .header nav a:hover:before {
@@ -878,6 +890,12 @@ figcaption {
   border-radius: 50%;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+}
+
+.listing figcaption {
+  font-family: "dots", "ar2", sans-serif;
+  font-size: 2rem;
+  line-height: 2;
 }
 
 .listing-text {
@@ -1112,6 +1130,9 @@ figcaption {
 }
 
 @media (max-width: 50em) {
+  .skills-lists {
+    margin-top: 0;
+  }
   .skills h3 {
     text-align: center;
   }
@@ -1292,6 +1313,10 @@ figcaption {
 .err a {
   color: inherit;
   text-decoration: none;
+}
+
+.err img {
+  border: 4px solid #00c3ff;
 }
 
 :root {

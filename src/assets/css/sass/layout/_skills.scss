@@ -96,6 +96,9 @@
         }
     }
     @include responds(tab) {
+        &-lists {
+            margin-top: 0;
+        }
         h3 {
             text-align: center;
         }
