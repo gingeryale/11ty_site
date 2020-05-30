@@ -4,10 +4,11 @@
     .project-intro {
         display: block;
     }
-    [class*="project-text-"]:nth-of-type(2n) {
+    [class*="project-text-"]:nth-of-type(2n + 1) {
         border: none;
         padding: 0;
         margin-top: 0;
+        max-width: 80rem;
     }
     ul {
         margin-top: 0;

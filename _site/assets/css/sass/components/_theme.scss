@@ -2,6 +2,10 @@
     --color-bg: #fff;
     --text-color: #444;
     --figCaption-clr: #fff;
+    --selectHighLight: #22d2ff;
+}
+::selection {
+    background: var(--selectHighLight); /* WebKit/Blink Browsers */
 }
 
 .wrapper {
@@ -16,4 +20,5 @@
     --color-bg: #1f3740;
     --text-color: #eca493;
     --figCaption-clr: #1f3740;
+    --selectHighLight: #6403d9;
 }

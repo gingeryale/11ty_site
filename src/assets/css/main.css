@@ -542,6 +542,8 @@ figcaption {
 /* LTR */
 [class*="heb"] {
   direction: rtl;
+  width: 100%;
+  max-width: 80rem;
 }
 
 [class*="heb"] button, [class*="heb"] .footer-button {
@@ -1136,7 +1138,7 @@ figcaption {
 
 @media (max-width: 50em) {
   .skills-lists {
-    margin-top: 0;
+    padding-top: 2.5rem;
   }
   .skills h3 {
     text-align: center;
@@ -1187,7 +1189,7 @@ figcaption {
   margin: 2.5rem 2.5rem 2.5rem 0;
 }
 
-.project-body [class*="project-text-"] {
+.project-body [class*="project-text-"]:nth-of-type(even) {
   border-top: 2px solid #6e12c8;
   border-bottom: 2px solid #4f44fd;
   padding: 2.5rem 0;
@@ -1283,10 +1285,11 @@ figcaption {
   display: block;
 }
 
-.words [class*="project-text-"]:nth-of-type(2n) {
+.words [class*="project-text-"]:nth-of-type(2n + 1) {
   border: none;
   padding: 0;
   margin-top: 0;
+  max-width: 80rem;
 }
 
 .words ul {
@@ -1314,7 +1317,7 @@ figcaption {
   min-height: 50vh;
   text-align: center;
   background: linear-gradient(135deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(225deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(315deg, #eceddc 25%, transparent 25%), linear-gradient(45deg, #eceddc 25%, transparent 25%);
-  background-size: 100px 100px;
+  background-size: 49px 49px;
   background-color: #6e12c8;
 }
 
@@ -1339,6 +1342,17 @@ figcaption {
   --color-bg: #fff;
   --text-color: #444;
   --figCaption-clr: #fff;
+  --selectHighLight: #22d2ff;
+}
+
+::-moz-selection {
+  background: var(--selectHighLight);
+  /* WebKit/Blink Browsers */
+}
+
+::selection {
+  background: var(--selectHighLight);
+  /* WebKit/Blink Browsers */
 }
 
 .wrapper {
@@ -1354,5 +1368,6 @@ figcaption {
   --color-bg: #1f3740;
   --text-color: #eca493;
   --figCaption-clr: #1f3740;
+  --selectHighLight: #6403d9;
 }
 /*# sourceMappingURL=main.css.map */

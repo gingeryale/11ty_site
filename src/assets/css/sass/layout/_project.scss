@@ -15,7 +15,7 @@
     figure {
         margin: $margin2 $margin2 $margin2 0;
     }
-    [class*="project-text-"] {
+    [class*="project-text-"]:nth-of-type(even) {
         border-top: 2px solid $purple2;
         border-bottom: 2px solid $purple7;
         padding: $margin2 0;

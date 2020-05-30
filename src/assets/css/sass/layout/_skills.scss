@@ -97,7 +97,7 @@
     }
     @include responds(tab) {
         &-lists {
-            margin-top: 0;
+            padding-top: $margin2;
         }
         h3 {
             text-align: center;
