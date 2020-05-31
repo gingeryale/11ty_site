@@ -1339,7 +1339,7 @@ figcaption {
 
 .err img {
   border: 4px solid #00c3ff;
-  width: clamp(28rem, 100%, 40rem);
+  width: clamp(20rem, 100%, 40rem);
   margin-top: 2.5rem;
 }
 
