@@ -3,12 +3,15 @@ layout: "/layout/home.njk"
 templateClass: "err"
 title: "404 Not Found"
 permalink: "404.html"
-listTEST: "/assets/img/listTest.png"
+listTEST: "/assets/img/choc_Pexels_FreeStockPhoto.png"
 ---
 {% block home %}
 <article>
     <h1>{{ title }}</h1>
     <p>Here's a random photo of a dog</p>
 
-    <a href="{{ "/" | url }}"></a><img src="{{ listTEST }}" alt="me"/></a>
+    <a href="{{ "/" | url }}"></a>
+    <figure>
+    <img src="{{ listTEST }}" alt="me"/>
+</figure></a>
 </article>{% endblock home %}

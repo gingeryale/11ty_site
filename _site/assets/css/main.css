@@ -544,6 +544,7 @@ figcaption {
   direction: rtl;
   width: 100%;
   max-width: 80rem;
+  text-align: right;
 }
 
 [class*="heb"] button, [class*="heb"] .footer-button {
@@ -1324,7 +1325,7 @@ figcaption {
 .err p {
   font-family: "ar4", sans-serif;
   font-size: 2rem;
-  background-color: #00c3ff;
+  background-color: #6e12c8;
 }
 
 .err a {
