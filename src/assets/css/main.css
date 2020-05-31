@@ -1369,8 +1369,8 @@ figcaption {
   background-color: var(--figCaption-clr);
 }
 
-.wrapper .err h1,
-.wrapper .err p {
+.wrapper.err h1,
+.wrapper.err p {
   background-color: var(--color-bg);
 }
 

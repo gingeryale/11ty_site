@@ -14,7 +14,7 @@
     figcaption {
         background-color: var(--figCaption-clr);
     }
-    .err {
+    &.err {
         h1,
         p {
             background-color: var(--color-bg);
