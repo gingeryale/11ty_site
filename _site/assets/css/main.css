@@ -1319,13 +1319,17 @@ figcaption {
   text-align: center;
   background: linear-gradient(135deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(225deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(315deg, #eceddc 25%, transparent 25%), linear-gradient(45deg, #eceddc 25%, transparent 25%);
   background-size: 49px 49px;
-  background-color: #6e12c8;
+  background-color: #4f4bd3;
+}
+
+.err h1 {
+  font-size: 4rem;
 }
 
 .err p {
   font-family: "ar4", sans-serif;
   font-size: 2rem;
-  background-color: #6e12c8;
+  line-height: 2;
 }
 
 .err a {
@@ -1363,6 +1367,11 @@ figcaption {
 
 .wrapper figcaption {
   background-color: var(--figCaption-clr);
+}
+
+.wrapper .err h1,
+.wrapper .err p {
+  background-color: var(--color-bg);
 }
 
 [data-theme="dark"] {

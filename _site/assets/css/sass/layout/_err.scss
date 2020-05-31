@@ -7,12 +7,15 @@
             linear-gradient(315deg, $errorPage 25%, transparent 25%),
             linear-gradient(45deg, $errorPage 25%, transparent 25%);
         background-size: 49px 49px;
-        background-color: $purple2;
+        background-color: $err;
+    }
+    h1 {
+        font-size: 4rem;
     }
     p {
         font-family: "ar4", sans-serif;
         font-size: 2rem;
-        background-color: $purple2;
+        line-height: 2;
     }
     a {
         color: inherit;
