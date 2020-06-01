@@ -1339,7 +1339,7 @@ figcaption {
 
 .err img {
   border: 4px solid #00c3ff;
-  width: clamp(28rem, 100%, 40rem);
+  width: clamp(20rem, 100%, 40rem);
   margin-top: 2.5rem;
 }
 
@@ -1379,5 +1379,26 @@ figcaption {
   --text-color: #eca493;
   --figCaption-clr: #1f3740;
   --selectHighLight: #6403d9;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1f3740;
+    --text-color: #eca493;
+    --figCaption-clr: #1f3740;
+    --selectHighLight: #6403d9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    content: "dark";
+    /* (ab)using the content property */
+  }
+  .wrapper {
+    background-color: var(--color-bg);
+    color: var(--text-color);
+  }
 }
 /*# sourceMappingURL=main.css.map */
