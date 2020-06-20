@@ -43,6 +43,7 @@ html {
 body {
     font-family: "ar2", sans-serif;
     color: rgba($black, 0.8);
+    max-width: 1366px; // 1366px to match macbook width
 }
 h1 {
     font-family: "ar4";
@@ -70,7 +71,7 @@ h4 {
     line-height: 1.5;
     padding: $margin2;
     width: 100%;
-    max-width: 1366px; // 1366px macbook width
+    max-width: 86%;
     margin: 0 auto;
 }
 
