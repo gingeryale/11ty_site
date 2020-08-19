@@ -671,7 +671,7 @@ figcaption {
 }
 
 .header nav a:hover {
-  color: #6e12c8;
+  color: #fff;
   -webkit-transform: skewX(0deg);
           transform: skewX(0deg);
   -webkit-box-shadow: inset 0 0px 0 #22d2ff;
