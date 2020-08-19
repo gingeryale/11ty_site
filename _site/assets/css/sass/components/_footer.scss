@@ -6,7 +6,7 @@
     font-size: 1.6rem;
     border-top: 2px dashed $blueFoam;
     padding: $margin2 * 2;
-    margin-top: $margin2;
+    margin: $margin2 auto;
     &-section-text {
         grid-row: 1;
         grid-column: 2 / 3;

@@ -5,26 +5,16 @@
 	overflow: hidden;
 	&-art {
 		display: flex;
-		justify-content: space-between;
-		position: relative;
-		height: calc(100% - #{$navHeight});
-		z-index: 0;
-		.header-figure-ao {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin: 0 auto;
-		}
+		justify-content: space-around;
+		align-items: center;
 		a.header-link {
 			display: block;
-			// border: 1px solid white;
 			.header-svg {
 				stroke-linecap: square;
 			}
 		}
 	}
 	&-figure-icons {
-		width: 50%;
 		.header-icon {
 			filter: invert(1);
 		}

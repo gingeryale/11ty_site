@@ -43,8 +43,7 @@ html {
 body {
     font-family: "ar2", sans-serif;
     color: rgba($black, 0.8);
-    max-width: 1600px;
-    margin: auto;
+    width: 100%;
 }
 h1 {
     font-family: "ar4";
@@ -72,7 +71,7 @@ h4 {
     line-height: 1.5;
     padding: $margin2;
     width: 100%;
-    max-width: 86%;
+    max-width: 1600px;
     margin: 0 auto;
 }
 

@@ -428,8 +428,7 @@ html {
 body {
   font-family: "ar2", sans-serif;
   color: rgba(0, 0, 0, 0.8);
-  max-width: 1600px;
-  margin: auto;
+  width: 100%;
 }
 
 h1 {
@@ -466,7 +465,7 @@ h4 {
   line-height: 1.5;
   padding: 2.5rem;
   width: 100%;
-  max-width: 86%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -597,25 +596,11 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  height: calc(100% - 6rem);
-  z-index: 0;
-}
-
-.header-art .header-figure-ao {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
 }
 
 .header-art a.header-link {
@@ -624,10 +609,6 @@ figcaption {
 
 .header-art a.header-link .header-svg {
   stroke-linecap: square;
-}
-
-.header-figure-icons {
-  width: 50%;
 }
 
 .header-figure-icons .header-icon {
@@ -779,7 +760,7 @@ figcaption {
   font-size: 1.6rem;
   border-top: 2px dashed #00c3ff;
   padding: 5rem;
-  margin-top: 2.5rem;
+  margin: 2.5rem auto;
 }
 
 .footer-section-text {
