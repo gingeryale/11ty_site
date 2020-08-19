@@ -15,7 +15,7 @@
     figure {
         margin: $margin2 $margin2 $margin2 0;
     }
-    [class*="project-text-"]:nth-of-type(even) {
+    [class*="project-text-"] {
         border-top: 2px solid $purple2;
         border-bottom: 2px solid $purple7;
         padding: $margin2 0;
@@ -55,13 +55,12 @@
 .project-intro {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     figure,
     ul {
-        width: 50%;
+        width: auto;
     }
     img {
-        aspect-ratio: 4 / 3;
         width: clamp(20rem, 100%, 40rem);
     }
 
@@ -72,7 +71,13 @@
             width: auto;
             display: flex;
             flex-direction: column;
+        }
+        ul {
             align-self: center;
+            padding: 0 $margin2;
+        }
+        figure {
+            align-items: center;
         }
     }
 }

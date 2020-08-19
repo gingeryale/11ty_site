@@ -167,3 +167,9 @@ figcaption {
         font-size: 1.8rem;
     }
 }
+
+@include responds(tab) {
+    ul {
+        padding: 0 $margin2;
+    }
+}
