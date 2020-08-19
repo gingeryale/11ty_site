@@ -13,3 +13,10 @@ $list3: $purple7 0%, $blueFoam 80%;
     background: -o-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);
 }
+
+@mixin rgradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+}

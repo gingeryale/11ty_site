@@ -43,7 +43,8 @@ html {
 body {
     font-family: "ar2", sans-serif;
     color: rgba($black, 0.8);
-    max-width: 1366px; // 1366px to match macbook width
+    max-width: 1600px;
+    margin: auto;
 }
 h1 {
     font-family: "ar4";
