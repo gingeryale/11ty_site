@@ -587,7 +587,7 @@ figcaption {
 
 .header {
   background: #410585;
-  background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
+  background: linear-gradient(135deg, #2c3e50, #2c3e50 60%, #00c3ff);
   height: 48rem;
   overflow: hidden;
 }
@@ -707,19 +707,10 @@ figcaption {
             transform: scale(0.8);
   }
   .header .header-figure-ao {
-    display: block;
-    position: absolute;
-    left: 2.5rem;
-    bottom: 2.5rem;
+    display: none;
   }
   .header figure {
     height: 100%;
-  }
-}
-
-@media (max-width: 46em) {
-  .header-svg {
-    width: 96%;
   }
 }
 

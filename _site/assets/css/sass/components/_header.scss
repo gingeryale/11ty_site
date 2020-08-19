@@ -1,7 +1,6 @@
 .header {
 	background: rgb(65, 5, 133);
-	@include gradient(45deg, $list1);
-
+	@include grad(135deg, $matteBlue, 60%, $blueFoam);
 	height: $headerHeight;
 	overflow: hidden;
 	&-art {
@@ -87,19 +86,10 @@
 			transform: scale(0.8);
 		}
 		.header-figure-ao {
-			display: block;
-			position: absolute;
-			left: $margin2;
-			bottom: $margin2;
+			display: none;
 		}
 		figure {
 			height: 100%;
-		}
-	}
-
-	@include responds(phone) {
-		&-svg {
-			width: 96%;
 		}
 	}
 }

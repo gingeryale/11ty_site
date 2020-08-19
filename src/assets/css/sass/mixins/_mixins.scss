@@ -13,3 +13,10 @@ $list3: $purple7 0%, $blueFoam 80%;
     background: -o-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);
 }
+
+@mixin grad($angle, $col1, $prc, $col2) {
+    background: -webkit-linear-gradient($angle, $col1, $col1 $prc, $col2);
+    background: -moz-linear-gradient($angle, $col1, $col1 $prc, $col2);
+    background: -o-linear-gradient($angle, $col1, $col1 $prc, $col2);
+    background: linear-gradient($angle, $col1, $col1 $prc, $col2);
+}
