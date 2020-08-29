@@ -402,6 +402,14 @@ template {
 }
 
 @font-face {
+  font-family: "mont";
+  src: url("./fonts/Montserrat-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "dots";
   src: url("./fonts/scoreboard.ttf") format("truetype");
   font-weight: 400;
@@ -851,7 +859,7 @@ figcaption {
   min-height: 52rem;
 }
 
-.listing.fade-in {
+.listing.fade-in_x {
   opacity: 0;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
@@ -1095,7 +1103,7 @@ figcaption {
 }
 
 .skills-text-eng > h1 {
-  font-family: "lot", "ar2", sans-serif;
+  font-family: "mont", "ar2", sans-serif;
   background: linear-gradient(45deg, #410585, #6e12c8, #a402fa);
   -webkit-background-clip: border-box;
   -webkit-background-clip: text;
